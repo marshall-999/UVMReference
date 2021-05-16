@@ -1,0 +1,4 @@
+  CREATE_STREAM @0 {NAME:u2a_incr_payload T:Transactions SCOPE:uvm_test_top.ve.virtual_sequencer STREAM:3477}
+  CREATE_STREAM @7350000 {NAME:u2a_incr_payload T:Transactions SCOPE:uvm_test_top.ve.ahb0.master_agent.sequencer STREAM:4419}
+  CREATE_STREAM @7350000 {NAME:u2a_incr_payload T:Transactions SCOPE:uvm_test_top.ve.uart0.Tx.sequencer STREAM:4433}
+  CREATE_STREAM @7350000 {NAME:u2a_incr_payload T:Transactions SCOPE:uvm_test_top.ve.uart1.Tx.sequencer STREAM:4442}

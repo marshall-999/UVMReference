@@ -1,0 +1,87 @@
+{
+    "uart_wb": [
+        "uart_wb",
+        "vsJ83",
+        "module"
+    ],
+    "uart_ctrl_pkg": [
+        "uart_ctrl_pkg",
+        "MKF5h",
+        "module"
+    ],
+    "_vcs_DPI_package": [
+        "_vcs_DPI_package",
+        "uM9F1",
+        "module"
+    ],
+    "uart_top": [
+        "uart_top",
+        "INsae",
+        "module"
+    ],
+    "uart_ctrl_top": [
+        "uart_ctrl_top",
+        "uGd4p",
+        "module"
+    ],
+    "vcs_paramclassrepository": [
+        "vcs_paramclassrepository",
+        "hEeZs",
+        "module"
+    ],
+    "uart_debug_if": [
+        "uart_debug_if",
+        "Ic705",
+        "module"
+    ],
+    "apb_pkg": [
+        "apb_pkg",
+        "xtRSS",
+        "module"
+    ],
+    "std": [
+        "std",
+        "reYIK",
+        "module"
+    ],
+    "uvm_pkg": [
+        "uvm_pkg",
+        "zr7M1",
+        "module"
+    ],
+    "apb_slave_if": [
+        "apb_slave_if",
+        "Pk5h8",
+        "module"
+    ],
+    "uart_pkg": [
+        "uart_pkg",
+        "B8pHK",
+        "module"
+    ],
+    "apb_master_if": [
+        "apb_master_if",
+        "BFYQ6",
+        "module"
+    ],
+    "apb_if": [
+        "apb_if",
+        "d9vZk",
+        "module"
+    ],
+    "uart_if": [
+        "uart_if",
+        "AWFLa",
+        "module"
+    ],
+    "uart_ctrl_internal_if": [
+        "uart_ctrl_internal_if",
+        "LQ5EI",
+        "module"
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module"
+    ]
+}

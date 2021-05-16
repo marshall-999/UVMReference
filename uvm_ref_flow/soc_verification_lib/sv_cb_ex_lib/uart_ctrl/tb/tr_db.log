@@ -1,0 +1,4 @@
+  CREATE_STREAM @0 {NAME:concurrent_u2a_a2u_rand_trans_vseq T:Transactions SCOPE:uvm_test_top.uart_ctrl_tb0.virtual_sequencer STREAM:1719}
+  CREATE_STREAM @0 {NAME:concurrent_u2a_a2u_rand_trans_vseq T:Transactions SCOPE:uvm_test_top.uart_ctrl_tb0.uart_ctrl0.reg_sequencer STREAM:1742}
+  CREATE_STREAM @20500 {NAME:concurrent_u2a_a2u_rand_trans_vseq T:Transactions SCOPE:uvm_test_top.uart_ctrl_tb0.apb0.master.sequencer STREAM:2012}
+  CREATE_STREAM @20500 {NAME:concurrent_u2a_a2u_rand_trans_vseq T:Transactions SCOPE:uvm_test_top.uart_ctrl_tb0.uart0.Tx.sequencer STREAM:2020}

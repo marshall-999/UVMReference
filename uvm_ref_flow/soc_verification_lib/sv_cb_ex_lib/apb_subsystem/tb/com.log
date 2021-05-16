@@ -1,0 +1,15 @@
+Command: vcs -timescale=1ns/1ns -sverilog /tools/uvm/uvm-1.2/src/dpi/uvm_dpi.cc -CFLAGS \
+-DVCS -debug_access+all -f filelist/tb.f -l com.log
+                         Chronologic VCS (TM)
+         Version L-2016.06_Full64 -- Mon Mar 15 05:44:32 2021
+               Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+The design hasn't changed and need not be recompiled. 
+If you really want to, delete file simv.daidir/.vcs.timestamp and
+run VCS again.
+

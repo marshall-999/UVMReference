@@ -1,0 +1,105 @@
+global coverage_group 0 apb_pkg::apb_monitor::apb_transfer_cg __coverage_apb_monitor.apb_transfer_cg unused_apb_monitor_apb_transfer_cg_loop_label apb_pkg 0 1 0 0 ( )
+ 1 1
+ 99 /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_monitor.sv
+ 71 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+0
+0
+0
+64
+0
+ 0
+
+3
+0
+1
+ 10 TRANS_ADDR 72 0 0 0 51 apb_monitor::apb_pkg_apb_monitor_apb_transfer_cg_fn 51 apb_monitor::apb_pkg_apb_monitor_apb_transfer_cg_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 32 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 4 ZERO 73 0 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 53 apb_monitor::apb_pkg_apb_monitor_apb_transfer_cg_fn_0 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 8 NON_ZERO 74 0 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 53 apb_monitor::apb_pkg_apb_monitor_apb_transfer_cg_fn_1 0 53 apb_monitor::apb_pkg_apb_monitor_apb_transfer_cg_fn_2 0 0 0 0 0
+
+ 15 TRANS_DIRECTION 76 0 0 0 53 apb_monitor::apb_pkg_apb_monitor_apb_transfer_cg_fn_3 53 apb_monitor::apb_pkg_apb_monitor_apb_transfer_cg_fn_3 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 7 32 1 27 apb_pkg::apb_direction_enum 1 1 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 4 READ 77 0 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 53 apb_monitor::apb_pkg_apb_monitor_apb_transfer_cg_fn_4 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 5 WRITE 78 0 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 53 apb_monitor::apb_pkg_apb_monitor_apb_transfer_cg_fn_5 0 0 0 0 0 0 0
+
+ 10 TRANS_DATA 80 0 0 0 53 apb_monitor::apb_pkg_apb_monitor_apb_transfer_cg_fn_6 53 apb_monitor::apb_pkg_apb_monitor_apb_transfer_cg_fn_6 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 32 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 3 1 1 0 0 1 1 4 ZERO 81 0 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 53 apb_monitor::apb_pkg_apb_monitor_apb_transfer_cg_fn_0 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 8 NON_ZERO 82 0 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 53 apb_monitor::apb_pkg_apb_monitor_apb_transfer_cg_fn_1 0 53 apb_monitor::apb_pkg_apb_monitor_apb_transfer_cg_fn_7 0 0 0 0 0
+ 1 1 0 0 1 1 8 ALL_ONES 83 0 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 53 apb_monitor::apb_pkg_apb_monitor_apb_transfer_cg_fn_8 0 0 0 0 0 0 0
+
+ 28 TRANS_ADDR_X_TRANS_DIRECTION 0 85 0 0 0 0 2 0 1 -1 0 0 0
+ 0
+ 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+end_coverage_group

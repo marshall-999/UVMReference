@@ -1,0 +1,9 @@
+#!/bin/sh -h 
+PYTHONHOME=/tools/synopsys/vcs/vcs-mx_vL-2016.06/etc/search/pyh
+export PYTHONHOME
+PYTHONPATH=/tools/synopsys/vcs/vcs-mx_vL-2016.06/linux64/lib/pylib27
+export PYTHONPATH
+LD_LIBRARY_PATH=/tools/synopsys/vcs/vcs-mx_vL-2016.06/linux64/lib:/tools/synopsys/vcs/vcs-mx_vL-2016.06/linux64/lib/pylib27
+export LD_LIBRARY_PATH
+/tools/synopsys/vcs/vcs-mx_vL-2016.06/linux64/bin/vcsfind_create_index.exe  -z  "/home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/tb/simv.daidir/debug_dump/fsearch/./idents_9kfOaO.xml.gz" "/home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/tb/simv.daidir/debug_dump/fsearch/./idents_tapi.xml.gz" -o "/home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/tb/simv.daidir/debug_dump/fsearch/fsearch.db_tmp"
+\mv "/home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/tb/simv.daidir/debug_dump/fsearch/fsearch.db_tmp" "/home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/tb/simv.daidir/debug_dump/fsearch/fsearch.db"

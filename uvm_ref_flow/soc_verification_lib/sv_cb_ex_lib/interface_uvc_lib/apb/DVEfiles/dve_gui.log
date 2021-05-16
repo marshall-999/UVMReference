@@ -1,0 +1,3 @@
+The design has assertions or cover properties.
+The assertion browser can be used to view them. Click on the assertion toolbar button or use the menu 'Window->Panes->Assertion' to open it.
+The file '/home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/vcdplus.vpd' was opened successfully.

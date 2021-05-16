@@ -1,0 +1,1125 @@
+Command: .//simv -l sim.log +UVM_TESTNAME=apb_uart_rx_tx +UVM_VERBOSITY=UVM_HIGH
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Mar 15 05:34 2021
+UVM_INFO /tools/uvm/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+(uart_ctrl_top.uart_dut) UART INFO: Data bus width is 32. Debug Interface present.
+
+(uart_ctrl_top.uart_dut) UART INFO: Doesn't have baudrate output
+
+UVM_INFO @ 0: reporter [RNTST] Running test apb_uart_rx_tx...
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/tb/sv/uart_ctrl_tb.sv(89) @ 0: uvm_test_top.uart_ctrl_tb0 [NOCONFIG] No uart_ctrl_config, creating...
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/tb/sv/uart_ctrl_tb.sv(93) @ 0: uvm_test_top.uart_ctrl_tb0 [uart_ctrl_tb] Printing cfg:
+-----------------------------------------------------------------
+Name                   Type                     Size  Value      
+-----------------------------------------------------------------
+cfg                    uart_ctrl_config         -     @484       
+  apb_cfg              apb_config               -     @486       
+    slave_configs      da(object)               1     -          
+      [0]              apb_slave_config         -     @488       
+        name           string                   5     uart0      
+        is_active      uvm_active_passive_enum  1     UVM_PASSIVE
+        start_address  integral                 32    'h0        
+        end_address    integral                 32    'h81ffff   
+        psel_index     integral                 32    'h0        
+    master_config      apb_master_config        -     @487       
+      name             string                   6     master     
+      is_active        uvm_active_passive_enum  1     UVM_ACTIVE 
+  uart_cfg             uart_config              -     @485       
+    is_tx_active       uvm_active_passive_enum  1     UVM_ACTIVE 
+    is_rx_active       uvm_active_passive_enum  1     UVM_PASSIVE
+    baud_rate_gen      integral                 8     'd0        
+    baud_rate_div      integral                 8     'd0        
+    char_length        integral                 2     'h0        
+    nbstop             integral                 1     'h0        
+    parity_en          integral                 1     'h0        
+    parity_mode        integral                 2     'h0        
+-----------------------------------------------------------------
+
+UVM_WARNING /tools/uvm/uvm-1.2/src/base/uvm_resource.svh(1416) @ 0: reporter [UVM/RSRC/NOREGEX] a resource with meta characters in the field name has been created "reg_model.uart_ctrl_rf"
+
+Note-[FCICIO] Instance coverage is ON
+/home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_reg_model.sv, 32
+uart_ctrl_pkg, "uart_ctrl_pkg::ua_div_latch0_c::wr_cg"
+  Instance coverage is set (option.per_instance = 1) for covergroup 
+  'uart_ctrl_pkg::ua_div_latch0_c::wr_cg'
+  
+  Covergroup Instance: uart_ctrl_top.me.obj.wr_cg 
+  Design hierarchy: uart_ctrl_pkg
+
+
+Note-[FCICIO] Instance coverage is ON
+/home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_reg_model.sv, 36
+uart_ctrl_pkg, "uart_ctrl_pkg::ua_div_latch0_c::rd_cg"
+  Instance coverage is set (option.per_instance = 1) for covergroup 
+  'uart_ctrl_pkg::ua_div_latch0_c::rd_cg'
+  
+  Covergroup Instance: uart_ctrl_top.me.obj.rd_cg 
+  Design hierarchy: uart_ctrl_pkg
+
+
+Note-[FCICIO] Instance coverage is ON
+/home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_reg_model.sv, 75
+uart_ctrl_pkg, "uart_ctrl_pkg::ua_div_latch1_c::wr_cg"
+  Instance coverage is set (option.per_instance = 1) for covergroup 
+  'uart_ctrl_pkg::ua_div_latch1_c::wr_cg'
+  
+  Covergroup Instance: uart_ctrl_top.me.obj.wr_cg 
+  Design hierarchy: uart_ctrl_pkg
+
+
+Note-[FCICIO] Instance coverage is ON
+/home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_reg_model.sv, 79
+uart_ctrl_pkg, "uart_ctrl_pkg::ua_div_latch1_c::rd_cg"
+  Instance coverage is set (option.per_instance = 1) for covergroup 
+  'uart_ctrl_pkg::ua_div_latch1_c::rd_cg'
+  
+  Covergroup Instance: uart_ctrl_top.me.obj.rd_cg 
+  Design hierarchy: uart_ctrl_pkg
+
+
+Note-[FCICIO] Instance coverage is ON
+/home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_reg_model.sv, 125
+uart_ctrl_pkg, "uart_ctrl_pkg::ua_int_id_c::rd_cg"
+  Instance coverage is set (option.per_instance = 1) for covergroup 
+  'uart_ctrl_pkg::ua_int_id_c::rd_cg'
+  
+  Covergroup Instance: uart_ctrl_top.me.obj.rd_cg 
+  Design hierarchy: uart_ctrl_pkg
+
+
+Note-[FCICIO] Instance coverage is ON
+/home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_reg_model.sv, 169
+uart_ctrl_pkg, "uart_ctrl_pkg::ua_fifo_ctrl_c::wr_cg"
+  Instance coverage is set (option.per_instance = 1) for covergroup 
+  'uart_ctrl_pkg::ua_fifo_ctrl_c::wr_cg'
+  
+  Covergroup Instance: uart_ctrl_top.me.obj.wr_cg 
+  Design hierarchy: uart_ctrl_pkg
+
+
+Note-[FCICIO] Instance coverage is ON
+/home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_reg_model.sv, 227
+uart_ctrl_pkg, "uart_ctrl_pkg::ua_lcr_c::wr_cg"
+  Instance coverage is set (option.per_instance = 1) for covergroup 
+  'uart_ctrl_pkg::ua_lcr_c::wr_cg'
+  
+  Covergroup Instance: uart_ctrl_top.me.obj.wr_cg 
+  Design hierarchy: uart_ctrl_pkg
+
+
+Note-[FCICIO] Instance coverage is ON
+/home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_reg_model.sv, 237
+uart_ctrl_pkg, "uart_ctrl_pkg::ua_lcr_c::rd_cg"
+  Instance coverage is set (option.per_instance = 1) for covergroup 
+  'uart_ctrl_pkg::ua_lcr_c::rd_cg'
+  
+  Covergroup Instance: uart_ctrl_top.me.obj.rd_cg 
+  Design hierarchy: uart_ctrl_pkg
+
+
+Note-[FCICIO] Instance coverage is ON
+/home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_reg_model.sv, 290
+uart_ctrl_pkg, "uart_ctrl_pkg::ua_ier_c::wr_cg"
+  Instance coverage is set (option.per_instance = 1) for covergroup 
+  'uart_ctrl_pkg::ua_ier_c::wr_cg'
+  
+  Covergroup Instance: uart_ctrl_top.me.obj.wr_cg 
+  Design hierarchy: uart_ctrl_pkg
+
+
+Note-[FCICIO] Instance coverage is ON
+/home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_reg_model.sv, 297
+uart_ctrl_pkg, "uart_ctrl_pkg::ua_ier_c::rd_cg"
+  Instance coverage is set (option.per_instance = 1) for covergroup 
+  'uart_ctrl_pkg::ua_ier_c::rd_cg'
+  
+  Covergroup Instance: uart_ctrl_top.me.obj.rd_cg 
+  Design hierarchy: uart_ctrl_pkg
+
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_env.sv(93) @ 0: uvm_test_top.uart_ctrl_tb0.uart_ctrl0 [NOCONFIG] No apb_slave_config ..
+UVM_INFO @ 0: uvm_test_top.uart_ctrl_tb0.apb0 [CFGNRD]  ::: The following resources have at least one write and no reads :::
+ apb_slave_cfg [/^uvm_test_top\.uart_ctrl_tb0\.uart_ctrl0\.monitor\..*x_scbd$/] : (class uvm_pkg::uvm_object) '{use_uvm_seeding:'h1, m_leaf_name:"slave_config", m_inst_id:488, m_inst_count:1696, __m_uvm_status_container:{ ref to class uvm_status_container}, uvm_global_copy_map:'{}, name:"uart0", is_active:UVM_PASSIVE, start_address:0, end_address:8519679, psel_index:0, type_name:"apb_slave_config"}   
+UVM_INFO /tools/uvm/uvm-1.2/src/base/uvm_resource.svh(564) @ 0: reporter [UVM/RESOURCE/ACCESSOR] uvm_test_top.uart_ctrl_tb0.uart_ctrl0.monitor reads: 0 @ 0  writes: 1 @ 0
+
+ apb_slave_cfg [/^uvm_test_top\.uart_ctrl_tb0\.uart_ctrl0$/] : (class uvm_pkg::uvm_object) '{use_uvm_seeding:'h1, m_leaf_name:"slave_config", m_inst_id:488, m_inst_count:1698, __m_uvm_status_container:{ ref to class uvm_status_container}, uvm_global_copy_map:'{}, name:"uart0", is_active:UVM_PASSIVE, start_address:0, end_address:8519679, psel_index:0, type_name:"apb_slave_config"}   
+UVM_INFO /tools/uvm/uvm-1.2/src/base/uvm_resource.svh(564) @ 0: reporter [UVM/RESOURCE/ACCESSOR] uvm_test_top.uart_ctrl_tb0 reads: 0 @ 0  writes: 1 @ 0
+
+ default_sequence [/^uvm_test_top\.uart_ctrl_tb0\.virtual_sequencer\.run_phase$/] : (class uvm_pkg::uvm_object_wrapper) '{type_name:"concurrent_u2a_a2u_rand_trans_vseq", me:{ ref to class uvm_object_registry#(uart_ctrl_top.concurrent_u2a_a2u_rand_trans_vseq,"concurrent_u2a_a2u_rand_trans_vseq")}}   
+UVM_INFO /tools/uvm/uvm-1.2/src/base/uvm_resource.svh(564) @ 0: reporter [UVM/RESOURCE/ACCESSOR] uvm_test_top reads: 0 @ 0  writes: 1 @ 0
+
+ vif [/^uvm_test_top\.uart_ctrl_tb0\.apb0\.slave\[0\]\..*$/] : (virtual interface apb_if#(32,32,32)) '{pclock:'hx, preset:'hx, paddr:'hxxxxxxxx, prwd:'hx, pwdata:'hxxxxxxxx, penable:'hx, psel:'hxxxx, prdata:'hxxxxxxxx, pslverr:'hx, pready:'hx, has_checks:'h1, has_coverage:'h1}   
+UVM_INFO /tools/uvm/uvm-1.2/src/base/uvm_resource.svh(564) @ 0: reporter [UVM/RESOURCE/ACCESSOR] uvm_test_top.uart_ctrl_tb0.apb0.slave[0] reads: 0 @ 0  writes: 1 @ 0
+
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(127) @ 0: uvm_test_top.uart_ctrl_tb0.uart0.Rx.monitor [uart_rx_monitor] Start Running
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(127) @ 0: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Start Running
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/tb/sv/uart_ctrl_tb.sv(160) @ 0: uvm_test_top.uart_ctrl_tb0 [uart_ctrl_tb] UART_Controller Testbench Topology:
+----------------------------------------------------------------------------------
+Name                          Type                               Size  Value      
+----------------------------------------------------------------------------------
+uart_ctrl_tb0                 uart_ctrl_tb                       -     @471       
+  apb0                        apb_env                            -     @573       
+    bus_collector             apb_collector                      -     @827       
+      addr_trans_export       uvm_blocking_peek_imp              -     @850       
+      item_collected_port     uvm_analysis_port                  -     @840       
+      cfg                     apb_config                         -     @486       
+      checks_enable           integral                           1     'h1        
+      coverage_enable         integral                           1     'h1        
+      num_transactions        integral                           32    'h0        
+    bus_monitor               apb_monitor                        -     @773       
+      addr_trans_export       uvm_blocking_peek_imp              -     @807       
+      addr_trans_port         uvm_blocking_peek_port             -     @817       
+      coll_mon_port           uvm_analysis_imp                   -     @797       
+      item_collected_port     uvm_analysis_port                  -     @787       
+      cfg                     apb_config                         -     @486       
+      checks_enable           integral                           1     'h1        
+      coverage_enable         integral                           1     'h1        
+      num_transactions        integral                           32    'h0        
+    master                    apb_master_agent                   -     @860       
+      driver                  apb_master_driver                  -     @1028      
+        rsp_port              uvm_analysis_port                  -     @1047      
+        seq_item_port         uvm_seq_item_pull_port             -     @1037      
+        cfg                   apb_config                         -     @486       
+      sequencer               apb_master_sequencer               -     @891       
+        rsp_export            uvm_analysis_export                -     @900       
+        seq_item_export       uvm_seq_item_pull_imp              -     @1018      
+        cfg                   apb_config                         -     @486       
+        arbitration_queue     array                              0     -          
+        lock_queue            array                              0     -          
+        num_last_reqs         integral                           32    'd1        
+        num_last_rsps         integral                           32    'd1        
+      monitor                 apb_monitor                        -     @773       
+      collector               apb_collector                      -     @827       
+      is_active               uvm_active_passive_enum            1     UVM_ACTIVE 
+      cfg                     apb_config                         -     @486       
+    slave[0]                  apb_slave_agent                    -     @869       
+      monitor                 apb_monitor                        -     @773       
+      collector               apb_collector                      -     @827       
+      is_active               uvm_active_passive_enum            1     UVM_PASSIVE
+      cfg                     apb_slave_config                   -     @488       
+    cfg                       apb_config                         -     @486       
+      slave_configs           da(object)                         1     -          
+        [0]                   apb_slave_config                   -     @488       
+          name                string                             5     uart0      
+          is_active           uvm_active_passive_enum            1     UVM_PASSIVE
+          start_address       integral                           32    'h0        
+          end_address         integral                           32    'h81ffff   
+          psel_index          integral                           32    'h0        
+      master_config           apb_master_config                  -     @487       
+        name                  string                             6     master     
+        is_active             uvm_active_passive_enum            1     UVM_ACTIVE 
+    checks_enable             integral                           1     'h1        
+    coverage_enable           integral                           1     'h1        
+  uart0                       uart_env                           -     @582       
+    Rx                        uart_rx_agent                      -     @1090      
+      monitor                 uart_rx_monitor                    -     @1104      
+        frame_collected_port  uvm_analysis_port                  -     @1113      
+        cfg                   uart_config                        -     @485       
+        checks_enable         integral                           1     'h1        
+        coverage_enable       integral                           1     'h1        
+        cfg                   uart_config                        -     @485       
+      is_active               uvm_active_passive_enum            1     UVM_PASSIVE
+      cfg                     uart_config                        -     @485       
+    Tx                        uart_tx_agent                      -     @1081      
+      driver                  uart_tx_driver                     -     @1288      
+        rsp_port              uvm_analysis_port                  -     @1307      
+        seq_item_port         uvm_seq_item_pull_port             -     @1297      
+        cfg                   uart_config                        -     @485       
+      monitor                 uart_tx_monitor                    -     @1132      
+        frame_collected_port  uvm_analysis_port                  -     @1141      
+        cfg                   uart_config                        -     @485       
+        checks_enable         integral                           1     'h1        
+        coverage_enable       integral                           1     'h1        
+        cfg                   uart_config                        -     @485       
+      sequencer               uart_sequencer                     -     @1151      
+        rsp_export            uvm_analysis_export                -     @1160      
+        seq_item_export       uvm_seq_item_pull_imp              -     @1278      
+        cfg                   uart_config                        -     @485       
+        arbitration_queue     array                              0     -          
+        lock_queue            array                              0     -          
+        num_last_reqs         integral                           32    'd1        
+        num_last_rsps         integral                           32    'd1        
+      is_active               uvm_active_passive_enum            1     UVM_ACTIVE 
+      cfg                     uart_config                        -     @485       
+    dut_cfg_port_in           uvm_analysis_imp                   -     @591       
+    cfg                       uart_config                        -     @485       
+      is_tx_active            uvm_active_passive_enum            1     UVM_ACTIVE 
+      is_rx_active            uvm_active_passive_enum            1     UVM_PASSIVE
+      baud_rate_gen           integral                           8     'd0        
+      baud_rate_div           integral                           8     'd0        
+      char_length             integral                           2     'h0        
+      nbstop                  integral                           1     'h0        
+      parity_en               integral                           1     'h0        
+      parity_mode             integral                           2     'h0        
+    checks_enable             integral                           1     'h1        
+    coverage_enable           integral                           1     'h1        
+  uart_ctrl0                  uart_ctrl_env                      -     @601       
+    apb_in                    uvm_analysis_imp                   -     @620       
+    apb_predictor             uvm_reg_predictor #(apb_transfer)  -     @1342      
+      bus_in                  uvm_analysis_imp                   -     @1355      
+      reg_ap                  uvm_analysis_port                  -     @1365      
+    monitor                   uart_ctrl_monitor                  -     @1512      
+      apb_in                  uvm_analysis_imp_apb               -     @1521      
+      apb_out                 uvm_analysis_port                  -     @1531      
+      rx_scbd                 uart_ctrl_rx_scbd                  -     @1627      
+        apb_add               uvm_analysis_imp_apb               -     @1646      
+        uart_match            uvm_analysis_imp_uart              -     @1636      
+      tx_scbd                 uart_ctrl_tx_scbd                  -     @1598      
+        apb_match             uvm_analysis_imp_apb               -     @1617      
+        uart_add              uvm_analysis_imp_uart              -     @1607      
+        uart_cfg              uart_config                        -     @485       
+        slave_cfg             apb_slave_config                   -     @488       
+      uart_cover              uart_ctrl_cover                    -     @1585      
+      uart_rx_in              uvm_analysis_imp_rx                -     @1541      
+      uart_rx_out             uvm_analysis_port                  -     @1551      
+      uart_tx_in              uvm_analysis_imp_tx                -     @1561      
+      uart_tx_out             uvm_analysis_port                  -     @1571      
+      cfg                     uart_ctrl_config                   -     @484       
+    reg_sequencer             uart_ctrl_reg_sequencer            -     @1375      
+      rsp_export              uvm_analysis_export                -     @1384      
+      seq_item_export         uvm_seq_item_pull_imp              -     @1502      
+      reg_model               uart_ctrl_reg_model_c              -     @503       
+      arbitration_queue       array                              0     -          
+      lock_queue              array                              0     -          
+      num_last_reqs           integral                           32    'd1        
+      num_last_rsps           integral                           32    'd1        
+    uart_cfg_out              uvm_analysis_port                  -     @610       
+    reg_model                 uart_ctrl_reg_model_c              -     @503       
+    reg2apb                   reg_to_apb_adapter                 -     @1341      
+    cfg                       uart_ctrl_config                   -     @484       
+      apb_cfg                 apb_config                         -     @486       
+        slave_configs         da(object)                         1     -          
+          [0]                 apb_slave_config                   -     @488       
+        master_config         apb_master_config                  -     @487       
+          name                string                             6     master     
+          is_active           uvm_active_passive_enum            1     UVM_ACTIVE 
+      uart_cfg                uart_config                        -     @485       
+        is_tx_active          uvm_active_passive_enum            1     UVM_ACTIVE 
+        is_rx_active          uvm_active_passive_enum            1     UVM_PASSIVE
+        baud_rate_gen         integral                           8     'd0        
+        baud_rate_div         integral                           8     'd0        
+        char_length           integral                           2     'h0        
+        nbstop                integral                           1     'h0        
+        parity_en             integral                           1     'h0        
+        parity_mode           integral                           2     'h0        
+  virtual_sequencer           uart_ctrl_virtual_sequencer        -     @630       
+    rsp_export                uvm_analysis_export                -     @639       
+    seq_item_export           uvm_seq_item_pull_imp              -     @757       
+    reg_model                 uart_ctrl_reg_model_c              -     @503       
+    arbitration_queue         array                              0     -          
+    lock_queue                array                              0     -          
+    num_last_reqs             integral                           32    'd1        
+    num_last_rsps             integral                           32    'd1        
+  reg_model                   uart_ctrl_reg_model_c              -     @503       
+  cfg                         uart_ctrl_config                   -     @484       
+    apb_cfg                   apb_config                         -     @486       
+      slave_configs           da(object)                         1     -          
+        [0]                   apb_slave_config                   -     @488       
+          name                string                             5     uart0      
+          is_active           uvm_active_passive_enum            1     UVM_PASSIVE
+          start_address       integral                           32    'h0        
+          end_address         integral                           32    'h81ffff   
+          psel_index          integral                           32    'h0        
+      master_config           apb_master_config                  -     @487       
+        name                  string                             6     master     
+        is_active             uvm_active_passive_enum            1     UVM_ACTIVE 
+    uart_cfg                  uart_config                        -     @485       
+      is_tx_active            uvm_active_passive_enum            1     UVM_ACTIVE 
+      is_rx_active            uvm_active_passive_enum            1     UVM_PASSIVE
+      baud_rate_gen           integral                           8     'd0        
+      baud_rate_div           integral                           8     'd0        
+      char_length             integral                           2     'h0        
+      nbstop                  integral                           1     'h0        
+      parity_en               integral                           1     'h0        
+      parity_mode             integral                           2     'h0        
+  coverage_enable             integral                           1     'h1        
+----------------------------------------------------------------------------------
+
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/sequence_lib/uart_ctrl_virtual_seq_lib.sv(61) @ 0: uvm_test_top.uart_ctrl_tb0.virtual_sequencer@@concurrent_u2a_a2u_rand_trans_vseq [concurrent_u2a_a2u_rand_trans_vseq] UART Controller Virtual Sequencer Executing
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/sequence_lib/uart_ctrl_virtual_seq_lib.sv(62) @ 0: uvm_test_top.uart_ctrl_tb0.virtual_sequencer@@concurrent_u2a_a2u_rand_trans_vseq [concurrent_u2a_a2u_rand_trans_vseq] Number of APB->UART Transaction = 1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/sequence_lib/uart_ctrl_virtual_seq_lib.sv(63) @ 0: uvm_test_top.uart_ctrl_tb0.virtual_sequencer@@concurrent_u2a_a2u_rand_trans_vseq [concurrent_u2a_a2u_rand_trans_vseq] Number of UART->APB Transaction = 3
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/sequence_lib/uart_ctrl_virtual_seq_lib.sv(64) @ 0: uvm_test_top.uart_ctrl_tb0.virtual_sequencer@@concurrent_u2a_a2u_rand_trans_vseq [concurrent_u2a_a2u_rand_trans_vseq] Total Number of APB<->UART Transaction = 4
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/sequence_lib/uart_ctrl_reg_seq_lib.sv(83) @ 0: uvm_test_top.uart_ctrl_tb0.uart_ctrl0.reg_sequencer@@concurrent_u2a_a2u_rand_trans_vseq.config_seq [uart_ctrl_config_reg_seq] UART Controller Register configuration sequence starting...
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(97) @ 0: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Reset Asserted
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_master_driver.sv(112) @ 0: uvm_test_top.uart_ctrl_tb0.apb0.master.driver [APB_MASTER_DRIVER] Reset observed
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_collector.sv(108) @ 5100: uvm_test_top.uart_ctrl_tb0.apb0.bus_collector [apb_collector] Detected Reset Done
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(173) @ 5100: uvm_test_top.uart_ctrl_tb0.uart0.Rx.monitor [uart_rx_monitor] trying to detect SOP
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(173) @ 5100: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] trying to detect SOP
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_monitor.sv(129) @ 7500: uvm_test_top.uart_ctrl_tb0.apb0.bus_monitor [apb_monitor] Address Phase Complete: 00000003[APB_WRITE]
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_master_driver.sv(130) @ 8500: uvm_test_top.uart_ctrl_tb0.apb0.master.driver [APB_MASTER_DRIVER_TR] APB Finished Driving Transfer 
+---------------------------------------------------------------------------------------------------------
+Name                           Type                Size  Value                                           
+---------------------------------------------------------------------------------------------------------
+transfer                       apb_transfer        -     @1758                                           
+  addr                         integral            32    'h3                                             
+  direction                    apb_direction_enum  32    APB_WRITE                                       
+  data                         integral            32    'h8f                                            
+  master                       string              0     ""                                              
+  slave                        string              0     ""                                              
+  begin_time                   time                64    5500                                            
+  depth                        int                 32    'd2                                             
+  parent sequence (name)       string              18    default_parent_seq                              
+  parent sequence (full name)  string              18    default_parent_seq                              
+  sequencer                    string              48    uvm_test_top.uart_ctrl_tb0.apb0.master.sequencer
+---------------------------------------------------------------------------------------------------------
+
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_monitor.sv(145) @ 8500: uvm_test_top.uart_ctrl_tb0.apb0.bus_monitor [apb_monitor] Transaction Collected:
+----------------------------------------------------
+Name             Type                Size  Value    
+----------------------------------------------------
+trans_collected  apb_transfer        -     @1850    
+  addr           integral            32    'h3      
+  direction      apb_direction_enum  32    APB_WRITE
+  data           integral            32    'h8f     
+  master         string              6     master   
+  slave          string              5     uart0    
+  begin_time     time                64    6500     
+  end_time       time                64    8500     
+----------------------------------------------------
+
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_env.sv(121) @ 8500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0 [uart_ctrl_env] APB_WRITE: addr = 'h3, data = 'h8f
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_env.sv(185) @ 8500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0 [uart_ctrl_env] Setting Config
+-----------------------------------------------------------
+Name             Type                     Size  Value      
+-----------------------------------------------------------
+uart_cfg         uart_config              -     @485       
+  is_tx_active   uvm_active_passive_enum  1     UVM_ACTIVE 
+  is_rx_active   uvm_active_passive_enum  1     UVM_PASSIVE
+  baud_rate_gen  integral                 8     'd0        
+  baud_rate_div  integral                 8     'd0        
+  char_length    integral                 2     'h3        
+  nbstop         integral                 1     'h1        
+  parity_en      integral                 1     'h1        
+  parity_mode    integral                 2     'h0        
+-----------------------------------------------------------
+
+UVM_INFO /tools/uvm/uvm-1.2/src/reg/uvm_reg_predictor.svh(218) @ 8500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0.apb_predictor [REG_PREDICT] Observed WRITE transaction to register reg_model.uart_ctrl_rf.ua_lcr: value='h8f : updated value = 'h8f
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_scoreboard.sv(157) @ 8500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0.monitor.rx_scbd [SCRBD] write_apb called with addr = 'h3 and data = 'h8f
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_scoreboard.sv(163) @ 8500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0.monitor.rx_scbd [SCRBD] LINE_CTRL Write with addr = 'h3 and data = 'h8f div_en = 1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_scoreboard.sv(69) @ 8500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0.monitor.tx_scbd [SCRBD] LINE_CTRL Write with addr = 'h3 and data = 'h8f div_en = 1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_collector.sv(138) @ 8500: uvm_test_top.uart_ctrl_tb0.apb0.bus_collector [apb_collector] Transfer collected :
+----------------------------------------------------
+Name             Type                Size  Value    
+----------------------------------------------------
+trans_collected  apb_transfer        -     @836     
+  addr           integral            32    'h3      
+  direction      apb_direction_enum  32    APB_WRITE
+  data           integral            32    'h8f     
+  master         string              6     master   
+  slave          string              5     uart0    
+  begin_time     time                64    6500     
+  end_time       time                64    8500     
+----------------------------------------------------
+
+UVM_INFO @ 8500: reporter [RegModel] Wrote register via map reg_model.uart_ctrl_rf.default_map: reg_model.uart_ctrl_rf.ua_lcr=0x8f
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_monitor.sv(129) @ 11500: uvm_test_top.uart_ctrl_tb0.apb0.bus_monitor [apb_monitor] Address Phase Complete: 00000000[APB_WRITE]
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_master_driver.sv(130) @ 12500: uvm_test_top.uart_ctrl_tb0.apb0.master.driver [APB_MASTER_DRIVER_TR] APB Finished Driving Transfer 
+---------------------------------------------------------------------------------------------------------
+Name                           Type                Size  Value                                           
+---------------------------------------------------------------------------------------------------------
+transfer                       apb_transfer        -     @1887                                           
+  addr                         integral            32    'h0                                             
+  direction                    apb_direction_enum  32    APB_WRITE                                       
+  data                         integral            32    'h1                                             
+  master                       string              0     ""                                              
+  slave                        string              0     ""                                              
+  begin_time                   time                64    9500                                            
+  depth                        int                 32    'd2                                             
+  parent sequence (name)       string              18    default_parent_seq                              
+  parent sequence (full name)  string              18    default_parent_seq                              
+  sequencer                    string              48    uvm_test_top.uart_ctrl_tb0.apb0.master.sequencer
+---------------------------------------------------------------------------------------------------------
+
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_monitor.sv(145) @ 12500: uvm_test_top.uart_ctrl_tb0.apb0.bus_monitor [apb_monitor] Transaction Collected:
+----------------------------------------------------
+Name             Type                Size  Value    
+----------------------------------------------------
+trans_collected  apb_transfer        -     @1895    
+  addr           integral            32    'h0      
+  direction      apb_direction_enum  32    APB_WRITE
+  data           integral            32    'h1      
+  master         string              6     master   
+  slave          string              5     uart0    
+  begin_time     time                64    10500    
+  end_time       time                64    12500    
+----------------------------------------------------
+
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_env.sv(121) @ 12500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0 [uart_ctrl_env] APB_WRITE: addr = 'h0, data = 'h1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_env.sv(185) @ 12500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0 [uart_ctrl_env] Setting Config
+-----------------------------------------------------------
+Name             Type                     Size  Value      
+-----------------------------------------------------------
+uart_cfg         uart_config              -     @485       
+  is_tx_active   uvm_active_passive_enum  1     UVM_ACTIVE 
+  is_rx_active   uvm_active_passive_enum  1     UVM_PASSIVE
+  baud_rate_gen  integral                 8     'd1        
+  baud_rate_div  integral                 8     'd0        
+  char_length    integral                 2     'h3        
+  nbstop         integral                 1     'h1        
+  parity_en      integral                 1     'h1        
+  parity_mode    integral                 2     'h0        
+-----------------------------------------------------------
+
+UVM_INFO /tools/uvm/uvm-1.2/src/reg/uvm_reg_predictor.svh(218) @ 12500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0.apb_predictor [REG_PREDICT] Observed WRITE transaction to register reg_model.uart_ctrl_rf.ua_div_latch0: value='h1 : updated value = 'h1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_scoreboard.sv(157) @ 12500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0.monitor.rx_scbd [SCRBD] write_apb called with addr = 'h0 and data = 'h1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_collector.sv(138) @ 12500: uvm_test_top.uart_ctrl_tb0.apb0.bus_collector [apb_collector] Transfer collected :
+----------------------------------------------------
+Name             Type                Size  Value    
+----------------------------------------------------
+trans_collected  apb_transfer        -     @836     
+  addr           integral            32    'h0      
+  direction      apb_direction_enum  32    APB_WRITE
+  data           integral            32    'h1      
+  master         string              6     master   
+  slave          string              5     uart0    
+  begin_time     time                64    10500    
+  end_time       time                64    12500    
+----------------------------------------------------
+
+UVM_INFO @ 12500: reporter [RegModel] Wrote register via map reg_model.uart_ctrl_rf.default_map: reg_model.uart_ctrl_rf.ua_div_latch0=0x1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_monitor.sv(129) @ 15500: uvm_test_top.uart_ctrl_tb0.apb0.bus_monitor [apb_monitor] Address Phase Complete: 00000001[APB_WRITE]
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_master_driver.sv(130) @ 16500: uvm_test_top.uart_ctrl_tb0.apb0.master.driver [APB_MASTER_DRIVER_TR] APB Finished Driving Transfer 
+---------------------------------------------------------------------------------------------------------
+Name                           Type                Size  Value                                           
+---------------------------------------------------------------------------------------------------------
+transfer                       apb_transfer        -     @1927                                           
+  addr                         integral            32    'h1                                             
+  direction                    apb_direction_enum  32    APB_WRITE                                       
+  data                         integral            32    'h0                                             
+  master                       string              0     ""                                              
+  slave                        string              0     ""                                              
+  begin_time                   time                64    13500                                           
+  depth                        int                 32    'd2                                             
+  parent sequence (name)       string              18    default_parent_seq                              
+  parent sequence (full name)  string              18    default_parent_seq                              
+  sequencer                    string              48    uvm_test_top.uart_ctrl_tb0.apb0.master.sequencer
+---------------------------------------------------------------------------------------------------------
+
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_monitor.sv(145) @ 16500: uvm_test_top.uart_ctrl_tb0.apb0.bus_monitor [apb_monitor] Transaction Collected:
+----------------------------------------------------
+Name             Type                Size  Value    
+----------------------------------------------------
+trans_collected  apb_transfer        -     @1935    
+  addr           integral            32    'h1      
+  direction      apb_direction_enum  32    APB_WRITE
+  data           integral            32    'h0      
+  master         string              6     master   
+  slave          string              5     uart0    
+  begin_time     time                64    14500    
+  end_time       time                64    16500    
+----------------------------------------------------
+
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_env.sv(121) @ 16500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0 [uart_ctrl_env] APB_WRITE: addr = 'h1, data = 'h0
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_env.sv(185) @ 16500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0 [uart_ctrl_env] Setting Config
+-----------------------------------------------------------
+Name             Type                     Size  Value      
+-----------------------------------------------------------
+uart_cfg         uart_config              -     @485       
+  is_tx_active   uvm_active_passive_enum  1     UVM_ACTIVE 
+  is_rx_active   uvm_active_passive_enum  1     UVM_PASSIVE
+  baud_rate_gen  integral                 8     'd1        
+  baud_rate_div  integral                 8     'd0        
+  char_length    integral                 2     'h3        
+  nbstop         integral                 1     'h1        
+  parity_en      integral                 1     'h1        
+  parity_mode    integral                 2     'h0        
+-----------------------------------------------------------
+
+UVM_INFO /tools/uvm/uvm-1.2/src/reg/uvm_reg_predictor.svh(218) @ 16500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0.apb_predictor [REG_PREDICT] Observed WRITE transaction to register reg_model.uart_ctrl_rf.ua_div_latch1: value='h0 : updated value = 'h0
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_scoreboard.sv(157) @ 16500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0.monitor.rx_scbd [SCRBD] write_apb called with addr = 'h1 and data = 'h0
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_collector.sv(138) @ 16500: uvm_test_top.uart_ctrl_tb0.apb0.bus_collector [apb_collector] Transfer collected :
+----------------------------------------------------
+Name             Type                Size  Value    
+----------------------------------------------------
+trans_collected  apb_transfer        -     @836     
+  addr           integral            32    'h1      
+  direction      apb_direction_enum  32    APB_WRITE
+  data           integral            32    'h0      
+  master         string              6     master   
+  slave          string              5     uart0    
+  begin_time     time                64    14500    
+  end_time       time                64    16500    
+----------------------------------------------------
+
+UVM_INFO @ 16500: reporter [RegModel] Wrote register via map reg_model.uart_ctrl_rf.default_map: reg_model.uart_ctrl_rf.ua_div_latch1=0x0
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_monitor.sv(129) @ 19500: uvm_test_top.uart_ctrl_tb0.apb0.bus_monitor [apb_monitor] Address Phase Complete: 00000003[APB_WRITE]
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_master_driver.sv(130) @ 20500: uvm_test_top.uart_ctrl_tb0.apb0.master.driver [APB_MASTER_DRIVER_TR] APB Finished Driving Transfer 
+---------------------------------------------------------------------------------------------------------
+Name                           Type                Size  Value                                           
+---------------------------------------------------------------------------------------------------------
+transfer                       apb_transfer        -     @1967                                           
+  addr                         integral            32    'h3                                             
+  direction                    apb_direction_enum  32    APB_WRITE                                       
+  data                         integral            32    'hf                                             
+  master                       string              0     ""                                              
+  slave                        string              0     ""                                              
+  begin_time                   time                64    17500                                           
+  depth                        int                 32    'd2                                             
+  parent sequence (name)       string              18    default_parent_seq                              
+  parent sequence (full name)  string              18    default_parent_seq                              
+  sequencer                    string              48    uvm_test_top.uart_ctrl_tb0.apb0.master.sequencer
+---------------------------------------------------------------------------------------------------------
+
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_monitor.sv(145) @ 20500: uvm_test_top.uart_ctrl_tb0.apb0.bus_monitor [apb_monitor] Transaction Collected:
+----------------------------------------------------
+Name             Type                Size  Value    
+----------------------------------------------------
+trans_collected  apb_transfer        -     @1975    
+  addr           integral            32    'h3      
+  direction      apb_direction_enum  32    APB_WRITE
+  data           integral            32    'hf      
+  master         string              6     master   
+  slave          string              5     uart0    
+  begin_time     time                64    18500    
+  end_time       time                64    20500    
+----------------------------------------------------
+
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_env.sv(121) @ 20500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0 [uart_ctrl_env] APB_WRITE: addr = 'h3, data = 'hf
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_env.sv(185) @ 20500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0 [uart_ctrl_env] Setting Config
+-----------------------------------------------------------
+Name             Type                     Size  Value      
+-----------------------------------------------------------
+uart_cfg         uart_config              -     @485       
+  is_tx_active   uvm_active_passive_enum  1     UVM_ACTIVE 
+  is_rx_active   uvm_active_passive_enum  1     UVM_PASSIVE
+  baud_rate_gen  integral                 8     'd1        
+  baud_rate_div  integral                 8     'd0        
+  char_length    integral                 2     'h3        
+  nbstop         integral                 1     'h1        
+  parity_en      integral                 1     'h1        
+  parity_mode    integral                 2     'h0        
+-----------------------------------------------------------
+
+UVM_INFO /tools/uvm/uvm-1.2/src/reg/uvm_reg_predictor.svh(218) @ 20500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0.apb_predictor [REG_PREDICT] Observed WRITE transaction to register reg_model.uart_ctrl_rf.ua_lcr: value='hf : updated value = 'hf
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_scoreboard.sv(157) @ 20500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0.monitor.rx_scbd [SCRBD] write_apb called with addr = 'h3 and data = 'hf
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_scoreboard.sv(163) @ 20500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0.monitor.rx_scbd [SCRBD] LINE_CTRL Write with addr = 'h3 and data = 'hf div_en = 0
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_scoreboard.sv(69) @ 20500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0.monitor.tx_scbd [SCRBD] LINE_CTRL Write with addr = 'h3 and data = 'hf div_en = 0
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_collector.sv(138) @ 20500: uvm_test_top.uart_ctrl_tb0.apb0.bus_collector [apb_collector] Transfer collected :
+----------------------------------------------------
+Name             Type                Size  Value    
+----------------------------------------------------
+trans_collected  apb_transfer        -     @836     
+  addr           integral            32    'h3      
+  direction      apb_direction_enum  32    APB_WRITE
+  data           integral            32    'hf      
+  master         string              6     master   
+  slave          string              5     uart0    
+  begin_time     time                64    18500    
+  end_time       time                64    20500    
+----------------------------------------------------
+
+UVM_INFO @ 20500: reporter [RegModel] Wrote register via map reg_model.uart_ctrl_rf.default_map: reg_model.uart_ctrl_rf.ua_lcr=0xf
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/sequence_lib/uart_ctrl_reg_seq_lib.sv(96) @ 20500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0.reg_sequencer@@concurrent_u2a_a2u_rand_trans_vseq.config_seq [uart_ctrl_config_reg_seq] UART Controller Register configuration sequence completed
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/sequence_lib/uart_ctrl_seq_lib.sv(91) @ 20500: uvm_test_top.uart_ctrl_tb0.apb0.master.sequencer@@concurrent_u2a_a2u_rand_trans_vseq.raw_seq [apb_to_uart_wr] APB RGM Sequencer Starting 1 Writes...
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_seq_lib.sv(131) @ 20500: uvm_test_top.uart_ctrl_tb0.uart0.Tx.sequencer@@concurrent_u2a_a2u_rand_trans_vseq.uart_seq [uart_transmit_seq] UART sequencer: Executing 3 Frames
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(154) @ 20500: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending TX Frame...
+-----------------------------------------------------------------------------------------------------------------------------------------
+Name                           Type        Size  Value                                                                                   
+-----------------------------------------------------------------------------------------------------------------------------------------
+req                            uart_frame  -     @2031                                                                                   
+  start_bit                    integral    1     'h0                                                                                     
+  payload                      integral    8     'hb8                                                                                    
+  parity                       integral    1     'h1                                                                                     
+  stop_bits                    integral    2     'h3                                                                                     
+  error_bits                   integral    4     'h0                                                                                     
+  parity_type                  parity_e    1     GOOD_PARITY                                                                             
+  transmit_delay               integral    32    'd6                                                                                     
+  begin_time                   time        64    20500                                                                                   
+  depth                        int         32    'd3                                                                                     
+  parent sequence (name)       string      8     uart_seq                                                                                
+  parent sequence (full name)  string      88    uvm_test_top.uart_ctrl_tb0.virtual_sequencer.concurrent_u2a_a2u_rand_trans_vseq.uart_seq
+  sequencer                    string      45    uvm_test_top.uart_ctrl_tb0.uart0.Tx.sequencer                                           
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_monitor.sv(129) @ 28500: uvm_test_top.uart_ctrl_tb0.apb0.bus_monitor [apb_monitor] Address Phase Complete: 00000000[APB_WRITE]
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_master_driver.sv(130) @ 29500: uvm_test_top.uart_ctrl_tb0.apb0.master.driver [APB_MASTER_DRIVER_TR] APB Finished Driving Transfer 
+------------------------------------------------------------------------------------------------------------------------------------------------
+Name                           Type                Size  Value                                                                                  
+------------------------------------------------------------------------------------------------------------------------------------------------
+req                            apb_transfer        -     @2025                                                                                  
+  addr                         integral            32    'h0                                                                                    
+  direction                    apb_direction_enum  32    APB_WRITE                                                                              
+  data                         integral            32    'hb8af6168                                                                             
+  master                       string              0     ""                                                                                     
+  slave                        string              0     ""                                                                                     
+  begin_time                   time                64    21500                                                                                  
+  depth                        int                 32    'd3                                                                                    
+  parent sequence (name)       string              7     raw_seq                                                                                
+  parent sequence (full name)  string              87    uvm_test_top.uart_ctrl_tb0.virtual_sequencer.concurrent_u2a_a2u_rand_trans_vseq.raw_seq
+  sequencer                    string              48    uvm_test_top.uart_ctrl_tb0.apb0.master.sequencer                                       
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_monitor.sv(145) @ 29500: uvm_test_top.uart_ctrl_tb0.apb0.bus_monitor [apb_monitor] Transaction Collected:
+-----------------------------------------------------
+Name             Type                Size  Value     
+-----------------------------------------------------
+trans_collected  apb_transfer        -     @2041     
+  addr           integral            32    'h0       
+  direction      apb_direction_enum  32    APB_WRITE 
+  data           integral            32    'hb8af6168
+  master         string              6     master    
+  slave          string              5     uart0     
+  begin_time     time                64    27500     
+  end_time       time                64    29500     
+-----------------------------------------------------
+
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_env.sv(121) @ 29500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0 [uart_ctrl_env] APB_WRITE: addr = 'h0, data = 'hb8af6168
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_env.sv(185) @ 29500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0 [uart_ctrl_env] Setting Config
+-----------------------------------------------------------
+Name             Type                     Size  Value      
+-----------------------------------------------------------
+uart_cfg         uart_config              -     @485       
+  is_tx_active   uvm_active_passive_enum  1     UVM_ACTIVE 
+  is_rx_active   uvm_active_passive_enum  1     UVM_PASSIVE
+  baud_rate_gen  integral                 8     'd1        
+  baud_rate_div  integral                 8     'd0        
+  char_length    integral                 2     'h3        
+  nbstop         integral                 1     'h1        
+  parity_en      integral                 1     'h1        
+  parity_mode    integral                 2     'h0        
+-----------------------------------------------------------
+
+UVM_INFO /tools/uvm/uvm-1.2/src/reg/uvm_reg_predictor.svh(218) @ 29500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0.apb_predictor [REG_PREDICT] Observed WRITE transaction to register reg_model.uart_ctrl_rf.ua_div_latch0: value='hb8af6168 : updated value = 'h68
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_scoreboard.sv(157) @ 29500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0.monitor.rx_scbd [SCRBD] write_apb called with addr = 'h0 and data = 'hb8af6168
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_scoreboard.sv(171) @ 29500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0.monitor.rx_scbd [SCRBD] write_apb called pushing into queue with data = 'hb8af6168
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_collector.sv(138) @ 29500: uvm_test_top.uart_ctrl_tb0.apb0.bus_collector [apb_collector] Transfer collected :
+-----------------------------------------------------
+Name             Type                Size  Value     
+-----------------------------------------------------
+trans_collected  apb_transfer        -     @836      
+  addr           integral            32    'h0       
+  direction      apb_direction_enum  32    APB_WRITE 
+  data           integral            32    'hb8af6168
+  master         string              6     master    
+  slave          string              5     uart0     
+  begin_time     time                64    27500     
+  end_time       time                64    29500     
+-----------------------------------------------------
+
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(184) @ 44500: uvm_test_top.uart_ctrl_tb0.uart0.Rx.monitor [uart_rx_monitor] SOP detected
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(193) @ 44500: uvm_test_top.uart_ctrl_tb0.uart0.Rx.monitor [uart_rx_monitor] Collecting a frame: 1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(143) @ 48500: uvm_test_top.uart_ctrl_tb0.uart0.Rx.monitor [uart_rx_monitor] sample_clk- resetting ua_brgr
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(163) @ 64500: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver - Modem RTS or CTS asserted
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 64600: uvm_test_top.uart_ctrl_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(172) @ 72600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame SOP: 0
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 80600: uvm_test_top.uart_ctrl_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(184) @ 84500: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] SOP detected
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(193) @ 84500: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Collecting a frame: 1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(143) @ 88500: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] sample_clk- resetting ua_brgr
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(180) @ 88600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame data bit number:0 value:'b00000000
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 96600: uvm_test_top.uart_ctrl_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(180) @ 104600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame data bit number:1 value:'b00000000
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 104600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received a Frame data bit:'b0
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 112600: uvm_test_top.uart_ctrl_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(180) @ 120600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame data bit number:2 value:'b00000000
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 120600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received a Frame data bit:'b0
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 128600: uvm_test_top.uart_ctrl_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(180) @ 136600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame data bit number:3 value:'b00000001
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 136600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received a Frame data bit:'b0
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 144600: uvm_test_top.uart_ctrl_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(180) @ 152600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame data bit number:4 value:'b00000001
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 152600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received a Frame data bit:'b1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 160600: uvm_test_top.uart_ctrl_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(180) @ 168600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame data bit number:5 value:'b00000001
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 168600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received a Frame data bit:'b1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 176600: uvm_test_top.uart_ctrl_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(180) @ 184600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame data bit number:6 value:'b00000000
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 184600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received a Frame data bit:'b1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(216) @ 192600: uvm_test_top.uart_ctrl_tb0.uart0.Rx.monitor [uart_rx_monitor] Received Parity bit:'b0
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(218) @ 192600: uvm_test_top.uart_ctrl_tb0.uart0.Rx.monitor [uart_rx_monitor] Received Parity is same as calculated Parity
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(180) @ 200600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame data bit number:7 value:'b00000001
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 200600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received a Frame data bit:'b0
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(226) @ 208600: uvm_test_top.uart_ctrl_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Stop bit: 'b1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(235) @ 216500: uvm_test_top.uart_ctrl_tb0.uart0.Rx.monitor [uart_rx_monitor] Collected the following Frame No:1
+-----------------------------------------------
+Name              Type        Size  Value      
+-----------------------------------------------
+uart_frame        uart_frame  -     @2065      
+  start_bit       integral    1     'h0        
+  payload         integral    8     'h68       
+  parity          integral    1     'h0        
+  stop_bits       integral    2     'h1        
+  error_bits      integral    4     'h0        
+  parity_type     parity_e    1     GOOD_PARITY
+  transmit_delay  integral    32    'd5        
+  begin_time      time        64    44500      
+-----------------------------------------------
+
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_scoreboard.sv(193) @ 216500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0.monitor.rx_scbd [SCRBD] ####### PASS : uart0 RECEIVED CORRECT DATA expected = 'h68, received = 'h68
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(173) @ 216500: uvm_test_top.uart_ctrl_tb0.uart0.Rx.monitor [uart_rx_monitor] trying to detect SOP
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(187) @ 216600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame Parity bit:'b1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 216600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received a Frame data bit:'b1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(194) @ 232600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame Stop bit:'b1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(216) @ 232600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received Parity bit:'b1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(218) @ 232600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received Parity is same as calculated Parity
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(215) @ 240500: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Frame **1** Sent...
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(220) @ 248500: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Frame complete...
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(226) @ 248600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received a Stop bit: 'b1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(235) @ 256500: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Collected the following Frame No:1
+-----------------------------------------------
+Name              Type        Size  Value      
+-----------------------------------------------
+uart_frame        uart_frame  -     @2087      
+  start_bit       integral    1     'h0        
+  payload         integral    8     'hb8       
+  parity          integral    1     'h1        
+  stop_bits       integral    2     'h1        
+  error_bits      integral    4     'h0        
+  parity_type     parity_e    1     GOOD_PARITY
+  transmit_delay  integral    32    'd10       
+  begin_time      time        64    84500      
+-----------------------------------------------
+
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(173) @ 256500: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] trying to detect SOP
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(154) @ 256500: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending TX Frame...
+-----------------------------------------------------------------------------------------------------------------------------------------
+Name                           Type        Size  Value                                                                                   
+-----------------------------------------------------------------------------------------------------------------------------------------
+req                            uart_frame  -     @2031                                                                                   
+  start_bit                    integral    1     'h0                                                                                     
+  payload                      integral    8     'h4e                                                                                    
+  parity                       integral    1     'h1                                                                                     
+  stop_bits                    integral    2     'h3                                                                                     
+  error_bits                   integral    4     'h0                                                                                     
+  parity_type                  parity_e    1     GOOD_PARITY                                                                             
+  transmit_delay               integral    32    'd0                                                                                     
+  begin_time                   time        64    256500                                                                                  
+  depth                        int         32    'd3                                                                                     
+  parent sequence (name)       string      8     uart_seq                                                                                
+  parent sequence (full name)  string      88    uvm_test_top.uart_ctrl_tb0.virtual_sequencer.concurrent_u2a_a2u_rand_trans_vseq.uart_seq
+  sequencer                    string      45    uvm_test_top.uart_ctrl_tb0.uart0.Tx.sequencer                                           
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(163) @ 256500: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver - Modem RTS or CTS asserted
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(172) @ 264600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame SOP: 0
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(184) @ 276500: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] SOP detected
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(193) @ 276500: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Collecting a frame: 2
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(143) @ 280500: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] sample_clk- resetting ua_brgr
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(180) @ 280600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame data bit number:0 value:'b00000000
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(180) @ 296600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame data bit number:1 value:'b00000001
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 296600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received a Frame data bit:'b0
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(180) @ 312600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame data bit number:2 value:'b00000001
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 312600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received a Frame data bit:'b1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(180) @ 328600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame data bit number:3 value:'b00000001
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 328600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received a Frame data bit:'b1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(180) @ 344600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame data bit number:4 value:'b00000000
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 344600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received a Frame data bit:'b1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(180) @ 360600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame data bit number:5 value:'b00000000
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 360600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received a Frame data bit:'b0
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(180) @ 376600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame data bit number:6 value:'b00000001
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 376600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received a Frame data bit:'b0
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(180) @ 392600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame data bit number:7 value:'b00000000
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 392600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received a Frame data bit:'b1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(187) @ 408600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame Parity bit:'b1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 408600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received a Frame data bit:'b0
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(194) @ 424600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame Stop bit:'b1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(216) @ 424600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received Parity bit:'b1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(218) @ 424600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received Parity is same as calculated Parity
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(215) @ 432500: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Frame **2** Sent...
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(220) @ 440500: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Frame complete...
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(226) @ 440600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received a Stop bit: 'b1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(235) @ 448500: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Collected the following Frame No:2
+-----------------------------------------------
+Name              Type        Size  Value      
+-----------------------------------------------
+uart_frame        uart_frame  -     @2182      
+  start_bit       integral    1     'h0        
+  payload         integral    8     'h4e       
+  parity          integral    1     'h1        
+  stop_bits       integral    2     'h1        
+  error_bits      integral    4     'h0        
+  parity_type     parity_e    1     GOOD_PARITY
+  transmit_delay  integral    32    'd3        
+  begin_time      time        64    276500     
+-----------------------------------------------
+
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(173) @ 448500: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] trying to detect SOP
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(154) @ 448500: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending TX Frame...
+-----------------------------------------------------------------------------------------------------------------------------------------
+Name                           Type        Size  Value                                                                                   
+-----------------------------------------------------------------------------------------------------------------------------------------
+req                            uart_frame  -     @2031                                                                                   
+  start_bit                    integral    1     'h0                                                                                     
+  payload                      integral    8     'hb6                                                                                    
+  parity                       integral    1     'h0                                                                                     
+  stop_bits                    integral    2     'h3                                                                                     
+  error_bits                   integral    4     'h0                                                                                     
+  parity_type                  parity_e    1     GOOD_PARITY                                                                             
+  transmit_delay               integral    32    'd2                                                                                     
+  begin_time                   time        64    448500                                                                                  
+  depth                        int         32    'd3                                                                                     
+  parent sequence (name)       string      8     uart_seq                                                                                
+  parent sequence (full name)  string      88    uvm_test_top.uart_ctrl_tb0.virtual_sequencer.concurrent_u2a_a2u_rand_trans_vseq.uart_seq
+  sequencer                    string      45    uvm_test_top.uart_ctrl_tb0.uart0.Tx.sequencer                                           
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(163) @ 464500: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver - Modem RTS or CTS asserted
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(172) @ 472600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame SOP: 0
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(184) @ 484500: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] SOP detected
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(193) @ 484500: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Collecting a frame: 3
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(143) @ 488500: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] sample_clk- resetting ua_brgr
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(180) @ 488600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame data bit number:0 value:'b00000000
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(180) @ 504600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame data bit number:1 value:'b00000001
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 504600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received a Frame data bit:'b0
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(180) @ 520600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame data bit number:2 value:'b00000001
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 520600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received a Frame data bit:'b1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(180) @ 536600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame data bit number:3 value:'b00000000
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 536600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received a Frame data bit:'b1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(180) @ 552600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame data bit number:4 value:'b00000001
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 552600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received a Frame data bit:'b0
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(180) @ 568600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame data bit number:5 value:'b00000001
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 568600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received a Frame data bit:'b1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(180) @ 584600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame data bit number:6 value:'b00000000
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 584600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received a Frame data bit:'b1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(180) @ 600600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame data bit number:7 value:'b00000001
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 600600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received a Frame data bit:'b0
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(187) @ 616600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame Parity bit:'b0
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(210) @ 616600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received a Frame data bit:'b1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(194) @ 632600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Driver Sending Frame Stop bit:'b1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(216) @ 632600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received Parity bit:'b0
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(218) @ 632600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received Parity is same as calculated Parity
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(215) @ 640500: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Frame **3** Sent...
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(220) @ 648500: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] Frame complete...
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(226) @ 648600: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Received a Stop bit: 'b1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(235) @ 656500: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] Collected the following Frame No:3
+-----------------------------------------------
+Name              Type        Size  Value      
+-----------------------------------------------
+uart_frame        uart_frame  -     @2248      
+  start_bit       integral    1     'h0        
+  payload         integral    8     'hb6       
+  parity          integral    1     'h0        
+  stop_bits       integral    2     'h1        
+  error_bits      integral    4     'h0        
+  parity_type     parity_e    1     GOOD_PARITY
+  transmit_delay  integral    32    'd5        
+  begin_time      time        64    484500     
+-----------------------------------------------
+
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv(173) @ 656500: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] trying to detect SOP
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/sequence_lib/uart_ctrl_seq_lib.sv(232) @ 1648500: uvm_test_top.uart_ctrl_tb0.apb0.master.sequencer@@concurrent_u2a_a2u_rand_trans_vseq.rd_rx_fifo [read_rx_fifo_seq] APB RGM Sequencer Starting 3 Reads...
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_monitor.sv(129) @ 1655500: uvm_test_top.uart_ctrl_tb0.apb0.bus_monitor [apb_monitor] Address Phase Complete: 00000000[APB_READ]
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_master_driver.sv(130) @ 1656500: uvm_test_top.uart_ctrl_tb0.apb0.master.driver [APB_MASTER_DRIVER_TR] APB Finished Driving Transfer 
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Name                           Type                Size  Value                                                                                     
+---------------------------------------------------------------------------------------------------------------------------------------------------
+req                            apb_transfer        -     @2316                                                                                     
+  addr                         integral            32    'h0                                                                                       
+  direction                    apb_direction_enum  32    APB_READ                                                                                  
+  data                         integral            32    'hb8                                                                                      
+  master                       string              0     ""                                                                                        
+  slave                        string              0     ""                                                                                        
+  begin_time                   time                64    1648500                                                                                   
+  depth                        int                 32    'd3                                                                                       
+  parent sequence (name)       string              10    rd_rx_fifo                                                                                
+  parent sequence (full name)  string              90    uvm_test_top.uart_ctrl_tb0.virtual_sequencer.concurrent_u2a_a2u_rand_trans_vseq.rd_rx_fifo
+  sequencer                    string              48    uvm_test_top.uart_ctrl_tb0.apb0.master.sequencer                                          
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_monitor.sv(145) @ 1656500: uvm_test_top.uart_ctrl_tb0.apb0.bus_monitor [apb_monitor] Transaction Collected:
+---------------------------------------------------
+Name             Type                Size  Value   
+---------------------------------------------------
+trans_collected  apb_transfer        -     @2324   
+  addr           integral            32    'h0     
+  direction      apb_direction_enum  32    APB_READ
+  data           integral            32    'hb8    
+  master         string              6     master  
+  slave          string              5     uart0   
+  begin_time     time                64    1654500 
+  end_time       time                64    1656500 
+---------------------------------------------------
+
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_env.sv(127) @ 1656500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0 [uart_ctrl_env] APB_READ: addr = 'h0, data = 'hb8
+UVM_INFO /tools/uvm/uvm-1.2/src/reg/uvm_reg_predictor.svh(223) @ 1656500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0.apb_predictor [REG_PREDICT] Observed READ transaction to register reg_model.uart_ctrl_rf.ua_div_latch0: value='hb8
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_scoreboard.sv(157) @ 1656500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0.monitor.rx_scbd [SCRBD] write_apb called with addr = 'h0 and data = 'hb8
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_scoreboard.sv(83) @ 1656500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0.monitor.tx_scbd [SCRBD] ####### PASS : APB RECEIVED CORRECT DATA from uart0  expected = 'hb8, received = 'hb8
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_collector.sv(138) @ 1656500: uvm_test_top.uart_ctrl_tb0.apb0.bus_collector [apb_collector] Transfer collected :
+---------------------------------------------------
+Name             Type                Size  Value   
+---------------------------------------------------
+trans_collected  apb_transfer        -     @836    
+  addr           integral            32    'h0     
+  direction      apb_direction_enum  32    APB_READ
+  data           integral            32    'hb8    
+  master         string              6     master  
+  slave          string              5     uart0   
+  begin_time     time                64    1654500 
+  end_time       time                64    1656500 
+---------------------------------------------------
+
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_monitor.sv(129) @ 1664500: uvm_test_top.uart_ctrl_tb0.apb0.bus_monitor [apb_monitor] Address Phase Complete: 00000000[APB_READ]
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_master_driver.sv(130) @ 1665500: uvm_test_top.uart_ctrl_tb0.apb0.master.driver [APB_MASTER_DRIVER_TR] APB Finished Driving Transfer 
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Name                           Type                Size  Value                                                                                     
+---------------------------------------------------------------------------------------------------------------------------------------------------
+req                            apb_transfer        -     @2344                                                                                     
+  addr                         integral            32    'h0                                                                                       
+  direction                    apb_direction_enum  32    APB_READ                                                                                  
+  data                         integral            32    'h4e                                                                                      
+  master                       string              0     ""                                                                                        
+  slave                        string              0     ""                                                                                        
+  begin_time                   time                64    1657500                                                                                   
+  depth                        int                 32    'd3                                                                                       
+  parent sequence (name)       string              10    rd_rx_fifo                                                                                
+  parent sequence (full name)  string              90    uvm_test_top.uart_ctrl_tb0.virtual_sequencer.concurrent_u2a_a2u_rand_trans_vseq.rd_rx_fifo
+  sequencer                    string              48    uvm_test_top.uart_ctrl_tb0.apb0.master.sequencer                                          
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_monitor.sv(145) @ 1665500: uvm_test_top.uart_ctrl_tb0.apb0.bus_monitor [apb_monitor] Transaction Collected:
+---------------------------------------------------
+Name             Type                Size  Value   
+---------------------------------------------------
+trans_collected  apb_transfer        -     @2352   
+  addr           integral            32    'h0     
+  direction      apb_direction_enum  32    APB_READ
+  data           integral            32    'h4e    
+  master         string              6     master  
+  slave          string              5     uart0   
+  begin_time     time                64    1663500 
+  end_time       time                64    1665500 
+---------------------------------------------------
+
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_env.sv(127) @ 1665500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0 [uart_ctrl_env] APB_READ: addr = 'h0, data = 'h4e
+UVM_INFO /tools/uvm/uvm-1.2/src/reg/uvm_reg_predictor.svh(223) @ 1665500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0.apb_predictor [REG_PREDICT] Observed READ transaction to register reg_model.uart_ctrl_rf.ua_div_latch0: value='h4e
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_scoreboard.sv(157) @ 1665500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0.monitor.rx_scbd [SCRBD] write_apb called with addr = 'h0 and data = 'h4e
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_scoreboard.sv(83) @ 1665500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0.monitor.tx_scbd [SCRBD] ####### PASS : APB RECEIVED CORRECT DATA from uart0  expected = 'h4e, received = 'h4e
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_collector.sv(138) @ 1665500: uvm_test_top.uart_ctrl_tb0.apb0.bus_collector [apb_collector] Transfer collected :
+---------------------------------------------------
+Name             Type                Size  Value   
+---------------------------------------------------
+trans_collected  apb_transfer        -     @836    
+  addr           integral            32    'h0     
+  direction      apb_direction_enum  32    APB_READ
+  data           integral            32    'h4e    
+  master         string              6     master  
+  slave          string              5     uart0   
+  begin_time     time                64    1663500 
+  end_time       time                64    1665500 
+---------------------------------------------------
+
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_monitor.sv(129) @ 1673500: uvm_test_top.uart_ctrl_tb0.apb0.bus_monitor [apb_monitor] Address Phase Complete: 00000000[APB_READ]
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_master_driver.sv(130) @ 1674500: uvm_test_top.uart_ctrl_tb0.apb0.master.driver [APB_MASTER_DRIVER_TR] APB Finished Driving Transfer 
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Name                           Type                Size  Value                                                                                     
+---------------------------------------------------------------------------------------------------------------------------------------------------
+req                            apb_transfer        -     @2372                                                                                     
+  addr                         integral            32    'h0                                                                                       
+  direction                    apb_direction_enum  32    APB_READ                                                                                  
+  data                         integral            32    'hb6                                                                                      
+  master                       string              0     ""                                                                                        
+  slave                        string              0     ""                                                                                        
+  begin_time                   time                64    1666500                                                                                   
+  depth                        int                 32    'd3                                                                                       
+  parent sequence (name)       string              10    rd_rx_fifo                                                                                
+  parent sequence (full name)  string              90    uvm_test_top.uart_ctrl_tb0.virtual_sequencer.concurrent_u2a_a2u_rand_trans_vseq.rd_rx_fifo
+  sequencer                    string              48    uvm_test_top.uart_ctrl_tb0.apb0.master.sequencer                                          
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_monitor.sv(145) @ 1674500: uvm_test_top.uart_ctrl_tb0.apb0.bus_monitor [apb_monitor] Transaction Collected:
+---------------------------------------------------
+Name             Type                Size  Value   
+---------------------------------------------------
+trans_collected  apb_transfer        -     @2380   
+  addr           integral            32    'h0     
+  direction      apb_direction_enum  32    APB_READ
+  data           integral            32    'hb6    
+  master         string              6     master  
+  slave          string              5     uart0   
+  begin_time     time                64    1672500 
+  end_time       time                64    1674500 
+---------------------------------------------------
+
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_env.sv(127) @ 1674500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0 [uart_ctrl_env] APB_READ: addr = 'h0, data = 'hb6
+UVM_INFO /tools/uvm/uvm-1.2/src/reg/uvm_reg_predictor.svh(223) @ 1674500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0.apb_predictor [REG_PREDICT] Observed READ transaction to register reg_model.uart_ctrl_rf.ua_div_latch0: value='hb6
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_scoreboard.sv(157) @ 1674500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0.monitor.rx_scbd [SCRBD] write_apb called with addr = 'h0 and data = 'hb6
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_scoreboard.sv(83) @ 1674500: uvm_test_top.uart_ctrl_tb0.uart_ctrl0.monitor.tx_scbd [SCRBD] ####### PASS : APB RECEIVED CORRECT DATA from uart0  expected = 'hb6, received = 'hb6
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_collector.sv(138) @ 1674500: uvm_test_top.uart_ctrl_tb0.apb0.bus_collector [apb_collector] Transfer collected :
+---------------------------------------------------
+Name             Type                Size  Value   
+---------------------------------------------------
+trans_collected  apb_transfer        -     @836    
+  addr           integral            32    'h0     
+  direction      apb_direction_enum  32    APB_READ
+  data           integral            32    'hb6    
+  master         string              6     master  
+  slave          string              5     uart0   
+  begin_time     time                64    1672500 
+  end_time       time                64    1674500 
+---------------------------------------------------
+
+UVM_INFO /tools/uvm/uvm-1.2/src/base/uvm_objection.svh(1270) @ 1774500: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_collector.sv(153) @ 1774500: uvm_test_top.uart_ctrl_tb0.apb0.bus_collector [apb_collector] Report: APB collector collected 8 transfers
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_monitor.sv(164) @ 1774500: uvm_test_top.uart_ctrl_tb0.apb0.bus_monitor [apb_monitor] Report: APB monitor collected 8 transfers
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_rx_monitor.sv(99) @ 1774500: uvm_test_top.uart_ctrl_tb0.uart0.Rx.monitor [uart_rx_monitor] UART Frames Collected:1
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_driver.sv(227) @ 1774500: uvm_test_top.uart_ctrl_tb0.uart0.Tx.driver [uart_tx_driver] UART Frames Sent:3
+UVM_INFO /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_monitor.sv(99) @ 1774500: uvm_test_top.uart_ctrl_tb0.uart0.Tx.monitor [uart_tx_monitor] UART Frames Collected:3
+UVM_INFO /tools/uvm/uvm-1.2/src/base/uvm_report_server.svh(847) @ 1774500: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  216
+UVM_WARNING :    1
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[APB_MASTER_DRIVER]     1
+[APB_MASTER_DRIVER_TR]     8
+[CFGNRD]     1
+[NOCONFIG]     2
+[REG_PREDICT]     8
+[RNTST]     1
+[RegModel]     4
+[SCRBD]    17
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+[UVM/RESOURCE/ACCESSOR]     4
+[UVM/RSRC/NOREGEX]     1
+[apb_collector]    10
+[apb_monitor]    17
+[apb_to_uart_wr]     1
+[concurrent_u2a_a2u_rand_trans_vseq]     4
+[read_rx_fifo_seq]     1
+[uart_ctrl_config_reg_seq]     2
+[uart_ctrl_env]    13
+[uart_ctrl_tb]     2
+[uart_rx_monitor]    19
+[uart_transmit_seq]     1
+[uart_tx_driver]    47
+[uart_tx_monitor]    51
+
+$finish called from file "/tools/uvm/uvm-1.2/src/base/uvm_root.svh", line 517.
+=======================================================
+UART CONTROLLER DUT REGISTERS:
+uart_ctrl_top.uart_dut.regs.dl  =0001
+uart_ctrl_top.uart_dut.regs.fcr = 3
+uart_ctrl_top.uart_dut.regs.ier = 0
+uart_ctrl_top.uart_dut.regs.iir = 1
+uart_ctrl_top.uart_dut.regs.lcr = 0f
+=======================================================
+$finish at simulation time              1774500
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 17745000 ps
+CPU Time:      0.420 seconds;       Data structure size:   0.7Mb
+Mon Mar 15 05:34:02 2021

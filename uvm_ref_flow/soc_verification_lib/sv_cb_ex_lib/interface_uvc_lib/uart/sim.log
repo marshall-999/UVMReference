@@ -1,0 +1,613 @@
+Command: .//simv -l sim.log +UVM_TESTNAME=uart_sequence_test +UVM_VERBOSITY=UVM_HIGH
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Mar 10 21:57 2021
+UVM_INFO /tools/uvm/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test uart_sequence_test...
+*Verdi3* Loading libsscore_vcs201606.so
+*Verdi3* : FSDB_GATE is set.
+*Verdi3* : FSDB_RTL is set.
+*Verdi3* : Enable Parallel Dumping.
+FSDB Dumper for VCS, Release Verdi3_L-2016.06-1, Linux x86_64/64bit, 07/10/2016
+(C) 1996 - 2016 by Synopsys, Inc.
+*Verdi3* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi3* : Create FSDB file 'test.fsdb'
+*Verdi3* : Begin traversing the scopes, layer (0).
+*Verdi3* : End of traversing.
+----------------------------------------------------------
+Name             Type                     Size  Value     
+----------------------------------------------------------
+demo_cfg         demo_config              -     @367      
+  is_tx_active   uvm_active_passive_enum  1     UVM_ACTIVE
+  is_rx_active   uvm_active_passive_enum  1     UVM_ACTIVE
+  baud_rate_gen  integral                 8     'd1       
+  baud_rate_div  integral                 8     'd0       
+  char_length    integral                 2     'h3       
+  nbstop         integral                 1     'h0       
+  parity_en      integral                 1     'h0       
+  parity_mode    integral                 2     'h3       
+----------------------------------------------------------
+UVM_INFO sv/uart_monitor.sv(127) @ 0: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Start Running
+UVM_INFO sv/uart_monitor.sv(127) @ 0: uvm_test_top.demo_tb0.uart0.Tx.monitor [uart_tx_monitor] Start Running
+-------------------------------------------------------------------------
+Name                            Type                     Size  Value     
+-------------------------------------------------------------------------
+uvm_test_top                    uart_sequence_test       -     @341      
+  demo_tb0                      demo_tb                  -     @354      
+    uart0                       uart_env                 -     @372      
+      Rx                        uart_rx_agent            -     @406      
+        driver                  uart_rx_driver           -     @576      
+          rsp_port              uvm_analysis_port        -     @595      
+          seq_item_port         uvm_seq_item_pull_port   -     @585      
+          cfg                   demo_config              -     @367      
+        monitor                 uart_rx_monitor          -     @420      
+          frame_collected_port  uvm_analysis_port        -     @429      
+          cfg                   demo_config              -     @367      
+          checks_enable         integral                 1     'h1       
+          coverage_enable       integral                 1     'h1       
+          cfg                   demo_config              -     @367      
+        sequencer               uart_sequencer           -     @439      
+          rsp_export            uvm_analysis_export      -     @448      
+          seq_item_export       uvm_seq_item_pull_imp    -     @566      
+          cfg                   demo_config              -     @367      
+          arbitration_queue     array                    0     -         
+          lock_queue            array                    0     -         
+          num_last_reqs         integral                 32    'd1       
+          num_last_rsps         integral                 32    'd1       
+        is_active               uvm_active_passive_enum  1     UVM_ACTIVE
+        cfg                     demo_config              -     @367      
+      Tx                        uart_tx_agent            -     @397      
+        driver                  uart_tx_driver           -     @783      
+          rsp_port              uvm_analysis_port        -     @802      
+          seq_item_port         uvm_seq_item_pull_port   -     @792      
+          cfg                   demo_config              -     @367      
+        monitor                 uart_tx_monitor          -     @627      
+          frame_collected_port  uvm_analysis_port        -     @636      
+          cfg                   demo_config              -     @367      
+          checks_enable         integral                 1     'h1       
+          coverage_enable       integral                 1     'h1       
+          cfg                   demo_config              -     @367      
+        sequencer               uart_sequencer           -     @646      
+          rsp_export            uvm_analysis_export      -     @655      
+          seq_item_export       uvm_seq_item_pull_imp    -     @773      
+          cfg                   demo_config              -     @367      
+          arbitration_queue     array                    0     -         
+          lock_queue            array                    0     -         
+          num_last_reqs         integral                 32    'd1       
+          num_last_rsps         integral                 32    'd1       
+        is_active               uvm_active_passive_enum  1     UVM_ACTIVE
+        cfg                     demo_config              -     @367      
+      dut_cfg_port_in           uvm_analysis_imp         -     @381      
+      cfg                       demo_config              -     @367      
+        is_tx_active            uvm_active_passive_enum  1     UVM_ACTIVE
+        is_rx_active            uvm_active_passive_enum  1     UVM_ACTIVE
+        baud_rate_gen           integral                 8     'd1       
+        baud_rate_div           integral                 8     'd0       
+        char_length             integral                 2     'h3       
+        nbstop                  integral                 1     'h0       
+        parity_en               integral                 1     'h0       
+        parity_mode             integral                 2     'h3       
+      checks_enable             integral                 1     'h1       
+      coverage_enable           integral                 1     'h1       
+-------------------------------------------------------------------------
+UVM_INFO sv/uart_seq_lib.sv(191) @ 0: uvm_test_top.demo_tb0.uart0.Rx.sequencer@@uart_short_transmit_seq [uart_short_transmit_seq] UART sequencer: Executing 8 Frames
+UVM_INFO sv/uart_monitor.sv(162) @ 51: uvm_test_top.demo_tb0.uart0.Rx.monitor [ID] XXXXXXXXOOOO
+UVM_INFO sv/uart_rx_monitor.sv(80) @ 51: uvm_test_top.demo_tb0.uart0.Rx.monitor [ID] HHHHHHHHOOOO
+UVM_INFO sv/uart_monitor.sv(176) @ 51: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] trying to detect SOP
+UVM_INFO sv/uart_monitor.sv(162) @ 51: uvm_test_top.demo_tb0.uart0.Tx.monitor [ID] XXXXXXXXOOOO
+UVM_INFO sv/uart_monitor.sv(176) @ 51: uvm_test_top.demo_tb0.uart0.Tx.monitor [uart_tx_monitor] trying to detect SOP
+UVM_INFO sv/uart_rx_driver.sv(153) @ 55: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending RX Frame...
+-----------------------------------------------------------------------------------------------------------------
+Name                           Type        Size  Value                                                           
+-----------------------------------------------------------------------------------------------------------------
+req                            uart_frame  -     @862                                                            
+  start_bit                    integral    1     'h0                                                             
+  payload                      integral    8     'h20                                                            
+  parity                       integral    1     'h0                                                             
+  stop_bits                    integral    2     'h3                                                             
+  error_bits                   integral    4     'h0                                                             
+  parity_type                  parity_e    1     GOOD_PARITY                                                     
+  transmit_delay               integral    32    'd5                                                             
+  begin_time                   time        64    55                                                              
+  depth                        int         32    'd2                                                             
+  parent sequence (name)       string      23    uart_short_transmit_seq                                         
+  parent sequence (full name)  string      64    uvm_test_top.demo_tb0.uart0.Rx.sequencer.uart_short_transmit_seq
+  sequencer                    string      40    uvm_test_top.demo_tb0.uart0.Rx.sequencer                        
+-----------------------------------------------------------------------------------------------------------------
+
+UVM_INFO sv/uart_rx_driver.sv(162) @ 105: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver - Modem RTS or CTS asserted
+UVM_INFO sv/uart_rx_driver.sv(171) @ 126: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame SOP: 0
+UVM_INFO sv/uart_monitor.sv(187) @ 140: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] SOP detected
+UVM_INFO sv/uart_monitor.sv(196) @ 140: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Collecting a frame: 1
+UVM_INFO sv/uart_monitor.sv(145) @ 145: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] sample_clk- resetting ua_brgr
+UVM_INFO sv/uart_rx_driver.sv(179) @ 146: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:0 value:'b00000000
+UVM_INFO sv/uart_rx_driver.sv(179) @ 166: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:1 value:'b00000000
+UVM_INFO sv/uart_monitor.sv(213) @ 166: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(179) @ 186: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:2 value:'b00000000
+UVM_INFO sv/uart_monitor.sv(213) @ 186: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(179) @ 206: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:3 value:'b00000000
+UVM_INFO sv/uart_monitor.sv(213) @ 206: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(179) @ 226: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:4 value:'b00000000
+UVM_INFO sv/uart_monitor.sv(213) @ 226: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(179) @ 246: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:5 value:'b00000001
+UVM_INFO sv/uart_monitor.sv(213) @ 246: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(179) @ 266: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:6 value:'b00000000
+UVM_INFO sv/uart_monitor.sv(213) @ 266: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO sv/uart_rx_driver.sv(179) @ 286: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:7 value:'b00000000
+UVM_INFO sv/uart_monitor.sv(213) @ 286: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_monitor.sv(213) @ 306: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(214) @ 315: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Frame **1** Sent...
+UVM_INFO sv/uart_rx_driver.sv(219) @ 325: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Frame complete...
+UVM_INFO sv/uart_monitor.sv(238) @ 335: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Collected the following Frame No:1
+-----------------------------------------------
+Name              Type        Size  Value      
+-----------------------------------------------
+uart_frame        uart_frame  -     @930       
+  start_bit       integral    1     'h0        
+  payload         integral    8     'h20       
+  parity          integral    1     'h0        
+  stop_bits       integral    2     'h0        
+  error_bits      integral    4     'h0        
+  parity_type     parity_e    1     GOOD_PARITY
+  transmit_delay  integral    32    'd9        
+  begin_time      time        64    140        
+-----------------------------------------------
+
+UVM_INFO sv/uart_monitor.sv(176) @ 335: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] trying to detect SOP
+UVM_INFO sv/uart_rx_driver.sv(153) @ 335: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending RX Frame...
+-----------------------------------------------------------------------------------------------------------------
+Name                           Type        Size  Value                                                           
+-----------------------------------------------------------------------------------------------------------------
+req                            uart_frame  -     @977                                                            
+  start_bit                    integral    1     'h0                                                             
+  payload                      integral    8     'h22                                                            
+  parity                       integral    1     'h1                                                             
+  stop_bits                    integral    2     'h3                                                             
+  error_bits                   integral    4     'h0                                                             
+  parity_type                  parity_e    1     GOOD_PARITY                                                     
+  transmit_delay               integral    32    'd17                                                            
+  begin_time                   time        64    335                                                             
+  depth                        int         32    'd2                                                             
+  parent sequence (name)       string      23    uart_short_transmit_seq                                         
+  parent sequence (full name)  string      64    uvm_test_top.demo_tb0.uart0.Rx.sequencer.uart_short_transmit_seq
+  sequencer                    string      40    uvm_test_top.demo_tb0.uart0.Rx.sequencer                        
+-----------------------------------------------------------------------------------------------------------------
+
+UVM_INFO sv/uart_rx_driver.sv(162) @ 505: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver - Modem RTS or CTS asserted
+UVM_INFO sv/uart_rx_driver.sv(171) @ 526: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame SOP: 0
+UVM_INFO sv/uart_monitor.sv(187) @ 540: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] SOP detected
+UVM_INFO sv/uart_monitor.sv(196) @ 540: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Collecting a frame: 2
+UVM_INFO sv/uart_monitor.sv(145) @ 545: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] sample_clk- resetting ua_brgr
+UVM_INFO sv/uart_rx_driver.sv(179) @ 546: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:0 value:'b00000000
+UVM_INFO sv/uart_rx_driver.sv(179) @ 566: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:1 value:'b00000001
+UVM_INFO sv/uart_monitor.sv(213) @ 566: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(179) @ 586: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:2 value:'b00000000
+UVM_INFO sv/uart_monitor.sv(213) @ 586: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO sv/uart_rx_driver.sv(179) @ 606: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:3 value:'b00000000
+UVM_INFO sv/uart_monitor.sv(213) @ 606: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(179) @ 626: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:4 value:'b00000000
+UVM_INFO sv/uart_monitor.sv(213) @ 626: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(179) @ 646: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:5 value:'b00000001
+UVM_INFO sv/uart_monitor.sv(213) @ 646: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(179) @ 666: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:6 value:'b00000000
+UVM_INFO sv/uart_monitor.sv(213) @ 666: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO sv/uart_rx_driver.sv(179) @ 686: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:7 value:'b00000000
+UVM_INFO sv/uart_monitor.sv(213) @ 686: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_monitor.sv(213) @ 706: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(214) @ 715: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Frame **2** Sent...
+UVM_INFO sv/uart_rx_driver.sv(219) @ 725: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Frame complete...
+UVM_INFO sv/uart_monitor.sv(238) @ 735: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Collected the following Frame No:2
+-----------------------------------------------
+Name              Type        Size  Value      
+-----------------------------------------------
+uart_frame        uart_frame  -     @994       
+  start_bit       integral    1     'h0        
+  payload         integral    8     'h22       
+  parity          integral    1     'h0        
+  stop_bits       integral    2     'h0        
+  error_bits      integral    4     'h0        
+  parity_type     parity_e    1     GOOD_PARITY
+  transmit_delay  integral    32    'd21       
+  begin_time      time        64    540        
+-----------------------------------------------
+
+UVM_INFO sv/uart_monitor.sv(176) @ 735: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] trying to detect SOP
+UVM_INFO sv/uart_rx_driver.sv(153) @ 735: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending RX Frame...
+-----------------------------------------------------------------------------------------------------------------
+Name                           Type        Size  Value                                                           
+-----------------------------------------------------------------------------------------------------------------
+req                            uart_frame  -     @1038                                                           
+  start_bit                    integral    1     'h0                                                             
+  payload                      integral    8     'h59                                                            
+  parity                       integral    1     'h1                                                             
+  stop_bits                    integral    2     'h3                                                             
+  error_bits                   integral    4     'h0                                                             
+  parity_type                  parity_e    1     GOOD_PARITY                                                     
+  transmit_delay               integral    32    'd3                                                             
+  begin_time                   time        64    735                                                             
+  depth                        int         32    'd2                                                             
+  parent sequence (name)       string      23    uart_short_transmit_seq                                         
+  parent sequence (full name)  string      64    uvm_test_top.demo_tb0.uart0.Rx.sequencer.uart_short_transmit_seq
+  sequencer                    string      40    uvm_test_top.demo_tb0.uart0.Rx.sequencer                        
+-----------------------------------------------------------------------------------------------------------------
+
+UVM_INFO sv/uart_rx_driver.sv(162) @ 765: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver - Modem RTS or CTS asserted
+UVM_INFO sv/uart_rx_driver.sv(171) @ 786: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame SOP: 0
+UVM_INFO sv/uart_monitor.sv(187) @ 800: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] SOP detected
+UVM_INFO sv/uart_monitor.sv(196) @ 800: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Collecting a frame: 3
+UVM_INFO sv/uart_monitor.sv(145) @ 805: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] sample_clk- resetting ua_brgr
+UVM_INFO sv/uart_rx_driver.sv(179) @ 806: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:0 value:'b00000001
+UVM_INFO sv/uart_rx_driver.sv(179) @ 826: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:1 value:'b00000000
+UVM_INFO sv/uart_monitor.sv(213) @ 826: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO sv/uart_rx_driver.sv(179) @ 846: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:2 value:'b00000000
+UVM_INFO sv/uart_monitor.sv(213) @ 846: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(179) @ 866: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:3 value:'b00000001
+UVM_INFO sv/uart_monitor.sv(213) @ 866: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(179) @ 886: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:4 value:'b00000001
+UVM_INFO sv/uart_monitor.sv(213) @ 886: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO sv/uart_rx_driver.sv(179) @ 906: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:5 value:'b00000000
+UVM_INFO sv/uart_monitor.sv(213) @ 906: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO sv/uart_rx_driver.sv(179) @ 926: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:6 value:'b00000001
+UVM_INFO sv/uart_monitor.sv(213) @ 926: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(179) @ 946: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:7 value:'b00000000
+UVM_INFO sv/uart_monitor.sv(213) @ 946: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO sv/uart_monitor.sv(213) @ 966: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(214) @ 975: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Frame **3** Sent...
+UVM_INFO sv/uart_rx_driver.sv(219) @ 985: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Frame complete...
+UVM_INFO sv/uart_monitor.sv(238) @ 995: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Collected the following Frame No:3
+-----------------------------------------------
+Name              Type        Size  Value      
+-----------------------------------------------
+uart_frame        uart_frame  -     @1054      
+  start_bit       integral    1     'h0        
+  payload         integral    8     'h59       
+  parity          integral    1     'h0        
+  stop_bits       integral    2     'h0        
+  error_bits      integral    4     'h0        
+  parity_type     parity_e    1     GOOD_PARITY
+  transmit_delay  integral    32    'd7        
+  begin_time      time        64    800        
+-----------------------------------------------
+
+UVM_INFO sv/uart_monitor.sv(176) @ 995: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] trying to detect SOP
+UVM_INFO sv/uart_rx_driver.sv(153) @ 995: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending RX Frame...
+-----------------------------------------------------------------------------------------------------------------
+Name                           Type        Size  Value                                                           
+-----------------------------------------------------------------------------------------------------------------
+req                            uart_frame  -     @1098                                                           
+  start_bit                    integral    1     'h0                                                             
+  payload                      integral    8     'he1                                                            
+  parity                       integral    1     'h1                                                             
+  stop_bits                    integral    2     'h3                                                             
+  error_bits                   integral    4     'h0                                                             
+  parity_type                  parity_e    1     GOOD_PARITY                                                     
+  transmit_delay               integral    32    'd7                                                             
+  begin_time                   time        64    995                                                             
+  depth                        int         32    'd2                                                             
+  parent sequence (name)       string      23    uart_short_transmit_seq                                         
+  parent sequence (full name)  string      64    uvm_test_top.demo_tb0.uart0.Rx.sequencer.uart_short_transmit_seq
+  sequencer                    string      40    uvm_test_top.demo_tb0.uart0.Rx.sequencer                        
+-----------------------------------------------------------------------------------------------------------------
+
+UVM_INFO sv/uart_rx_driver.sv(162) @ 1065: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver - Modem RTS or CTS asserted
+UVM_INFO sv/uart_rx_driver.sv(171) @ 1086: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame SOP: 0
+UVM_INFO sv/uart_monitor.sv(187) @ 1100: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] SOP detected
+UVM_INFO sv/uart_monitor.sv(196) @ 1100: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Collecting a frame: 4
+UVM_INFO sv/uart_monitor.sv(145) @ 1105: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] sample_clk- resetting ua_brgr
+UVM_INFO sv/uart_rx_driver.sv(179) @ 1106: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:0 value:'b00000001
+UVM_INFO sv/uart_rx_driver.sv(179) @ 1126: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:1 value:'b00000000
+UVM_INFO sv/uart_monitor.sv(213) @ 1126: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO sv/uart_rx_driver.sv(179) @ 1146: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:2 value:'b00000000
+UVM_INFO sv/uart_monitor.sv(213) @ 1146: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(179) @ 1166: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:3 value:'b00000000
+UVM_INFO sv/uart_monitor.sv(213) @ 1166: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(179) @ 1186: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:4 value:'b00000000
+UVM_INFO sv/uart_monitor.sv(213) @ 1186: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(179) @ 1206: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:5 value:'b00000001
+UVM_INFO sv/uart_monitor.sv(213) @ 1206: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(179) @ 1226: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:6 value:'b00000001
+UVM_INFO sv/uart_monitor.sv(213) @ 1226: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO sv/uart_rx_driver.sv(179) @ 1246: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:7 value:'b00000001
+UVM_INFO sv/uart_monitor.sv(213) @ 1246: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO sv/uart_monitor.sv(213) @ 1266: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO sv/uart_rx_driver.sv(214) @ 1275: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Frame **4** Sent...
+UVM_INFO sv/uart_rx_driver.sv(219) @ 1285: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Frame complete...
+UVM_INFO sv/uart_monitor.sv(238) @ 1295: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Collected the following Frame No:4
+-----------------------------------------------
+Name              Type        Size  Value      
+-----------------------------------------------
+uart_frame        uart_frame  -     @1114      
+  start_bit       integral    1     'h0        
+  payload         integral    8     'he1       
+  parity          integral    1     'h0        
+  stop_bits       integral    2     'h0        
+  error_bits      integral    4     'h0        
+  parity_type     parity_e    1     GOOD_PARITY
+  transmit_delay  integral    32    'd11       
+  begin_time      time        64    1100       
+-----------------------------------------------
+
+UVM_INFO sv/uart_monitor.sv(176) @ 1295: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] trying to detect SOP
+UVM_INFO sv/uart_rx_driver.sv(153) @ 1295: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending RX Frame...
+-----------------------------------------------------------------------------------------------------------------
+Name                           Type        Size  Value                                                           
+-----------------------------------------------------------------------------------------------------------------
+req                            uart_frame  -     @1158                                                           
+  start_bit                    integral    1     'h0                                                             
+  payload                      integral    8     'h7e                                                            
+  parity                       integral    1     'h1                                                             
+  stop_bits                    integral    2     'h3                                                             
+  error_bits                   integral    4     'h0                                                             
+  parity_type                  parity_e    1     GOOD_PARITY                                                     
+  transmit_delay               integral    32    'd9                                                             
+  begin_time                   time        64    1295                                                            
+  depth                        int         32    'd2                                                             
+  parent sequence (name)       string      23    uart_short_transmit_seq                                         
+  parent sequence (full name)  string      64    uvm_test_top.demo_tb0.uart0.Rx.sequencer.uart_short_transmit_seq
+  sequencer                    string      40    uvm_test_top.demo_tb0.uart0.Rx.sequencer                        
+-----------------------------------------------------------------------------------------------------------------
+
+UVM_INFO sv/uart_rx_driver.sv(162) @ 1385: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver - Modem RTS or CTS asserted
+UVM_INFO sv/uart_rx_driver.sv(171) @ 1406: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame SOP: 0
+UVM_INFO sv/uart_monitor.sv(187) @ 1420: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] SOP detected
+UVM_INFO sv/uart_monitor.sv(196) @ 1420: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Collecting a frame: 5
+UVM_INFO sv/uart_monitor.sv(145) @ 1425: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] sample_clk- resetting ua_brgr
+UVM_INFO sv/uart_rx_driver.sv(179) @ 1426: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:0 value:'b00000000
+UVM_INFO sv/uart_rx_driver.sv(179) @ 1446: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:1 value:'b00000001
+UVM_INFO sv/uart_monitor.sv(213) @ 1446: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(179) @ 1466: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:2 value:'b00000001
+UVM_INFO sv/uart_monitor.sv(213) @ 1466: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO sv/uart_rx_driver.sv(179) @ 1486: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:3 value:'b00000001
+UVM_INFO sv/uart_monitor.sv(213) @ 1486: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO sv/uart_rx_driver.sv(179) @ 1506: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:4 value:'b00000001
+UVM_INFO sv/uart_monitor.sv(213) @ 1506: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO sv/uart_rx_driver.sv(179) @ 1526: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:5 value:'b00000001
+UVM_INFO sv/uart_monitor.sv(213) @ 1526: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO sv/uart_rx_driver.sv(179) @ 1546: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:6 value:'b00000001
+UVM_INFO sv/uart_monitor.sv(213) @ 1546: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO sv/uart_rx_driver.sv(179) @ 1566: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:7 value:'b00000000
+UVM_INFO sv/uart_monitor.sv(213) @ 1566: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO sv/uart_monitor.sv(213) @ 1586: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(214) @ 1595: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Frame **5** Sent...
+UVM_INFO sv/uart_rx_driver.sv(219) @ 1605: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Frame complete...
+UVM_INFO sv/uart_monitor.sv(238) @ 1615: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Collected the following Frame No:5
+-----------------------------------------------
+Name              Type        Size  Value      
+-----------------------------------------------
+uart_frame        uart_frame  -     @1174      
+  start_bit       integral    1     'h0        
+  payload         integral    8     'h7e       
+  parity          integral    1     'h0        
+  stop_bits       integral    2     'h0        
+  error_bits      integral    4     'h0        
+  parity_type     parity_e    1     GOOD_PARITY
+  transmit_delay  integral    32    'd13       
+  begin_time      time        64    1420       
+-----------------------------------------------
+
+UVM_INFO sv/uart_monitor.sv(176) @ 1615: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] trying to detect SOP
+UVM_INFO sv/uart_rx_driver.sv(153) @ 1615: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending RX Frame...
+-----------------------------------------------------------------------------------------------------------------
+Name                           Type        Size  Value                                                           
+-----------------------------------------------------------------------------------------------------------------
+req                            uart_frame  -     @1218                                                           
+  start_bit                    integral    1     'h0                                                             
+  payload                      integral    8     'h94                                                            
+  parity                       integral    1     'h0                                                             
+  stop_bits                    integral    2     'h3                                                             
+  error_bits                   integral    4     'h0                                                             
+  parity_type                  parity_e    1     GOOD_PARITY                                                     
+  transmit_delay               integral    32    'd1                                                             
+  begin_time                   time        64    1615                                                            
+  depth                        int         32    'd2                                                             
+  parent sequence (name)       string      23    uart_short_transmit_seq                                         
+  parent sequence (full name)  string      64    uvm_test_top.demo_tb0.uart0.Rx.sequencer.uart_short_transmit_seq
+  sequencer                    string      40    uvm_test_top.demo_tb0.uart0.Rx.sequencer                        
+-----------------------------------------------------------------------------------------------------------------
+
+UVM_INFO sv/uart_rx_driver.sv(162) @ 1625: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver - Modem RTS or CTS asserted
+UVM_INFO sv/uart_rx_driver.sv(171) @ 1646: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame SOP: 0
+UVM_INFO sv/uart_monitor.sv(187) @ 1660: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] SOP detected
+UVM_INFO sv/uart_monitor.sv(196) @ 1660: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Collecting a frame: 6
+UVM_INFO sv/uart_monitor.sv(145) @ 1665: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] sample_clk- resetting ua_brgr
+UVM_INFO sv/uart_rx_driver.sv(179) @ 1666: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:0 value:'b00000000
+UVM_INFO sv/uart_rx_driver.sv(179) @ 1686: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:1 value:'b00000000
+UVM_INFO sv/uart_monitor.sv(213) @ 1686: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(179) @ 1706: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:2 value:'b00000001
+UVM_INFO sv/uart_monitor.sv(213) @ 1706: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(179) @ 1726: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:3 value:'b00000000
+UVM_INFO sv/uart_monitor.sv(213) @ 1726: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO sv/uart_rx_driver.sv(179) @ 1746: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:4 value:'b00000001
+UVM_INFO sv/uart_monitor.sv(213) @ 1746: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(179) @ 1766: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:5 value:'b00000000
+UVM_INFO sv/uart_monitor.sv(213) @ 1766: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO sv/uart_rx_driver.sv(179) @ 1786: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:6 value:'b00000000
+UVM_INFO sv/uart_monitor.sv(213) @ 1786: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(179) @ 1806: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:7 value:'b00000001
+UVM_INFO sv/uart_monitor.sv(213) @ 1806: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_monitor.sv(213) @ 1826: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO sv/uart_rx_driver.sv(214) @ 1835: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Frame **6** Sent...
+UVM_INFO sv/uart_rx_driver.sv(219) @ 1845: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Frame complete...
+UVM_INFO sv/uart_monitor.sv(238) @ 1855: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Collected the following Frame No:6
+-----------------------------------------------
+Name              Type        Size  Value      
+-----------------------------------------------
+uart_frame        uart_frame  -     @1234      
+  start_bit       integral    1     'h0        
+  payload         integral    8     'h94       
+  parity          integral    1     'h0        
+  stop_bits       integral    2     'h0        
+  error_bits      integral    4     'h0        
+  parity_type     parity_e    1     GOOD_PARITY
+  transmit_delay  integral    32    'd5        
+  begin_time      time        64    1660       
+-----------------------------------------------
+
+UVM_INFO sv/uart_monitor.sv(176) @ 1855: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] trying to detect SOP
+UVM_INFO sv/uart_rx_driver.sv(153) @ 1855: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending RX Frame...
+-----------------------------------------------------------------------------------------------------------------
+Name                           Type        Size  Value                                                           
+-----------------------------------------------------------------------------------------------------------------
+req                            uart_frame  -     @1278                                                           
+  start_bit                    integral    1     'h0                                                             
+  payload                      integral    8     'h36                                                            
+  parity                       integral    1     'h1                                                             
+  stop_bits                    integral    2     'h3                                                             
+  error_bits                   integral    4     'h0                                                             
+  parity_type                  parity_e    1     GOOD_PARITY                                                     
+  transmit_delay               integral    32    'd1                                                             
+  begin_time                   time        64    1855                                                            
+  depth                        int         32    'd2                                                             
+  parent sequence (name)       string      23    uart_short_transmit_seq                                         
+  parent sequence (full name)  string      64    uvm_test_top.demo_tb0.uart0.Rx.sequencer.uart_short_transmit_seq
+  sequencer                    string      40    uvm_test_top.demo_tb0.uart0.Rx.sequencer                        
+-----------------------------------------------------------------------------------------------------------------
+
+UVM_INFO sv/uart_rx_driver.sv(162) @ 1865: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver - Modem RTS or CTS asserted
+UVM_INFO sv/uart_rx_driver.sv(171) @ 1886: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame SOP: 0
+UVM_INFO sv/uart_monitor.sv(187) @ 1900: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] SOP detected
+UVM_INFO sv/uart_monitor.sv(196) @ 1900: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Collecting a frame: 7
+UVM_INFO sv/uart_monitor.sv(145) @ 1905: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] sample_clk- resetting ua_brgr
+UVM_INFO sv/uart_rx_driver.sv(179) @ 1906: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:0 value:'b00000000
+UVM_INFO sv/uart_rx_driver.sv(179) @ 1926: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:1 value:'b00000001
+UVM_INFO sv/uart_monitor.sv(213) @ 1926: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(179) @ 1946: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:2 value:'b00000001
+UVM_INFO sv/uart_monitor.sv(213) @ 1946: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO sv/uart_rx_driver.sv(179) @ 1966: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:3 value:'b00000000
+UVM_INFO sv/uart_monitor.sv(213) @ 1966: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO sv/uart_rx_driver.sv(179) @ 1986: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:4 value:'b00000001
+UVM_INFO sv/uart_monitor.sv(213) @ 1986: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(179) @ 2006: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:5 value:'b00000001
+UVM_INFO sv/uart_monitor.sv(213) @ 2006: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO sv/uart_rx_driver.sv(179) @ 2026: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:6 value:'b00000000
+UVM_INFO sv/uart_monitor.sv(213) @ 2026: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO sv/uart_rx_driver.sv(179) @ 2046: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:7 value:'b00000000
+UVM_INFO sv/uart_monitor.sv(213) @ 2046: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_monitor.sv(213) @ 2066: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(214) @ 2075: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Frame **7** Sent...
+UVM_INFO sv/uart_rx_driver.sv(219) @ 2085: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Frame complete...
+UVM_INFO sv/uart_monitor.sv(238) @ 2095: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Collected the following Frame No:7
+-----------------------------------------------
+Name              Type        Size  Value      
+-----------------------------------------------
+uart_frame        uart_frame  -     @1294      
+  start_bit       integral    1     'h0        
+  payload         integral    8     'h36       
+  parity          integral    1     'h0        
+  stop_bits       integral    2     'h0        
+  error_bits      integral    4     'h0        
+  parity_type     parity_e    1     GOOD_PARITY
+  transmit_delay  integral    32    'd5        
+  begin_time      time        64    1900       
+-----------------------------------------------
+
+UVM_INFO sv/uart_monitor.sv(176) @ 2095: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] trying to detect SOP
+UVM_INFO sv/uart_rx_driver.sv(153) @ 2095: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending RX Frame...
+-----------------------------------------------------------------------------------------------------------------
+Name                           Type        Size  Value                                                           
+-----------------------------------------------------------------------------------------------------------------
+req                            uart_frame  -     @1338                                                           
+  start_bit                    integral    1     'h0                                                             
+  payload                      integral    8     'h75                                                            
+  parity                       integral    1     'h0                                                             
+  stop_bits                    integral    2     'h3                                                             
+  error_bits                   integral    4     'h0                                                             
+  parity_type                  parity_e    1     GOOD_PARITY                                                     
+  transmit_delay               integral    32    'd4                                                             
+  begin_time                   time        64    2095                                                            
+  depth                        int         32    'd2                                                             
+  parent sequence (name)       string      23    uart_short_transmit_seq                                         
+  parent sequence (full name)  string      64    uvm_test_top.demo_tb0.uart0.Rx.sequencer.uart_short_transmit_seq
+  sequencer                    string      40    uvm_test_top.demo_tb0.uart0.Rx.sequencer                        
+-----------------------------------------------------------------------------------------------------------------
+
+UVM_INFO sv/uart_rx_driver.sv(162) @ 2135: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver - Modem RTS or CTS asserted
+UVM_INFO sv/uart_rx_driver.sv(171) @ 2146: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame SOP: 0
+UVM_INFO sv/uart_monitor.sv(187) @ 2160: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] SOP detected
+UVM_INFO sv/uart_monitor.sv(196) @ 2160: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Collecting a frame: 8
+UVM_INFO sv/uart_monitor.sv(145) @ 2165: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] sample_clk- resetting ua_brgr
+UVM_INFO sv/uart_rx_driver.sv(179) @ 2166: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:0 value:'b00000001
+UVM_INFO sv/uart_rx_driver.sv(179) @ 2186: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:1 value:'b00000000
+UVM_INFO sv/uart_monitor.sv(213) @ 2186: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO sv/uart_rx_driver.sv(179) @ 2206: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:2 value:'b00000001
+UVM_INFO sv/uart_monitor.sv(213) @ 2206: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(179) @ 2226: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:3 value:'b00000000
+UVM_INFO sv/uart_monitor.sv(213) @ 2226: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO sv/uart_rx_driver.sv(179) @ 2246: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:4 value:'b00000001
+UVM_INFO sv/uart_monitor.sv(213) @ 2246: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(179) @ 2266: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:5 value:'b00000001
+UVM_INFO sv/uart_monitor.sv(213) @ 2266: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO sv/uart_rx_driver.sv(179) @ 2286: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:6 value:'b00000001
+UVM_INFO sv/uart_monitor.sv(213) @ 2286: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO sv/uart_rx_driver.sv(179) @ 2306: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Driver Sending Frame data bit number:7 value:'b00000000
+UVM_INFO sv/uart_monitor.sv(213) @ 2306: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b1
+UVM_INFO sv/uart_monitor.sv(213) @ 2326: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Received a Frame data bit:'b0
+UVM_INFO sv/uart_rx_driver.sv(214) @ 2335: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Frame **8** Sent...
+UVM_INFO sv/uart_rx_driver.sv(219) @ 2345: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] Frame complete...
+UVM_INFO sv/uart_monitor.sv(238) @ 2355: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] Collected the following Frame No:8
+-----------------------------------------------
+Name              Type        Size  Value      
+-----------------------------------------------
+uart_frame        uart_frame  -     @1354      
+  start_bit       integral    1     'h0        
+  payload         integral    8     'h75       
+  parity          integral    1     'h0        
+  stop_bits       integral    2     'h0        
+  error_bits      integral    4     'h0        
+  parity_type     parity_e    1     GOOD_PARITY
+  transmit_delay  integral    32    'd7        
+  begin_time      time        64    2160       
+-----------------------------------------------
+
+UVM_INFO sv/uart_monitor.sv(176) @ 2355: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] trying to detect SOP
+UVM_INFO /tools/uvm/uvm-1.2/src/base/uvm_objection.svh(1270) @ 2545: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO sv/uart_rx_driver.sv(226) @ 2545: uvm_test_top.demo_tb0.uart0.Rx.driver [uart_rx_driver] UART Frames Sent:8
+UVM_INFO sv/uart_rx_monitor.sv(100) @ 2545: uvm_test_top.demo_tb0.uart0.Rx.monitor [uart_rx_monitor] UART Frames Collected:8
+UVM_INFO sv/uart_tx_driver.sv(227) @ 2545: uvm_test_top.demo_tb0.uart0.Tx.driver [uart_tx_driver] UART Frames Sent:0
+UVM_INFO sv/uart_tx_monitor.sv(99) @ 2545: uvm_test_top.demo_tb0.uart0.Tx.monitor [uart_tx_monitor] UART Frames Collected:0
+UVM_INFO /tools/uvm/uvm-1.2/src/base/uvm_report_server.svh(847) @ 2545: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  223
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[ID]     3
+[RNTST]     1
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+[uart_rx_driver]   105
+[uart_rx_monitor]   107
+[uart_short_transmit_seq]     1
+[uart_tx_driver]     1
+[uart_tx_monitor]     3
+
+$finish called from file "/tools/uvm/uvm-1.2/src/base/uvm_root.svh", line 517.
+$finish at simulation time                 2545
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 2545 ns
+CPU Time:      0.480 seconds;       Data structure size:   0.5Mb
+Wed Mar 10 21:57:40 2021

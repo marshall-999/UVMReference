@@ -1,0 +1,151 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "vcs_paramclassrepository": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        },
+        "dut_dummy": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        },
+        "_vcs_DPI_package": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        },
+        "std": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        },
+        "apb_if": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        },
+        "uvm_pkg": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        },
+        "apb_pkg": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        },
+        "demo_top": {
+            "Compiled Times": 1,
+            "Compiled": "Yes"
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "out": "objs/amcQw_d.o",
+            "mod": "...MASTER...",
+            "bytes": 8412,
+            "mode": 4,
+            "checksum": 0
+        },
+        "hEeZs_d": {
+            "out": "hEeZs_d.o",
+            "mod": "vcs_paramclassrepository",
+            "bytes": 7322728,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_4365_archive_1.a"
+        },
+        "uM9F1_d": {
+            "out": "uM9F1_d.o",
+            "mod": "_vcs_DPI_package",
+            "bytes": 9517,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_4365_archive_1.a"
+        },
+        "d9vZk_d": {
+            "out": "d9vZk_d.o",
+            "mod": "apb_if",
+            "bytes": 14776,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_4365_archive_1.a"
+        },
+        "reYIK_d": {
+            "out": "reYIK_d.o",
+            "mod": "std",
+            "bytes": 42656,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_4365_archive_1.a"
+        },
+        "SfAKH_d": {
+            "out": "SfAKH_d.o",
+            "mod": "dut_dummy",
+            "bytes": 6449,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_4365_archive_1.a"
+        },
+        "zr7M1_d": {
+            "out": "zr7M1_d.o",
+            "mod": "uvm_pkg",
+            "bytes": 6901178,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_4365_archive_1.a"
+        },
+        "xtRSS_d": {
+            "out": "xtRSS_d.o",
+            "mod": "apb_pkg",
+            "bytes": 979931,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_4365_archive_1.a"
+        },
+        "QJdyh_d": {
+            "out": "QJdyh_d.o",
+            "mod": "demo_top",
+            "bytes": 484115,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.0/_4365_archive_1.a"
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_4365_archive_1.a",
+            "objects": [
+                [
+                    "hEeZs_d.o",
+                    7322728
+                ],
+                [
+                    "uM9F1_d.o",
+                    9517
+                ],
+                [
+                    "reYIK_d.o",
+                    42656
+                ],
+                [
+                    "zr7M1_d.o",
+                    6901178
+                ],
+                [
+                    "xtRSS_d.o",
+                    979931
+                ],
+                [
+                    "SfAKH_d.o",
+                    6449
+                ],
+                [
+                    "d9vZk_d.o",
+                    14776
+                ],
+                [
+                    "QJdyh_d.o",
+                    484115
+                ]
+            ],
+            "size": 15761350
+        }
+    ]
+}

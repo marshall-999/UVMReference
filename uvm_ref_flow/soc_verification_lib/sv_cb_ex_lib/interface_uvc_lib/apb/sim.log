@@ -1,0 +1,259 @@
+Command: .//simv -l sim.log +UVM_TESTNAME=test_read_after_write +UVM_VERBOSITY=UVM_HIGH
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Mar 15 03:50 2021
+UVM_INFO /tools/uvm/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test test_read_after_write...
+VCD+ Writer L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
+UVM_INFO @ 0: uvm_test_top.demo_tb0.apb0 [CFGNRD]  ::: The following resources have at least one write and no reads :::
+ default_sequence [/^uvm_test_top\.demo_tb0\.apb0\.slave\[0\]\.sequencer\.run_phase$/] : (class uvm_pkg::uvm_object_wrapper) '{type_name:"mem_response_seq", me:{ ref to class uvm_object_registry#(apb_pkg::mem_response_seq,"mem_response_seq")}, Tname:"mem_response_seq"}   
+UVM_INFO /tools/uvm/uvm-1.2/src/base/uvm_resource.svh(564) @ 0: reporter [UVM/RESOURCE/ACCESSOR] uvm_test_top reads: 0 @ 0  writes: 1 @ 0
+
+ default_sequence [/^uvm_test_top\.demo_tb0\.apb0\.master\.sequencer\.run_phase$/] : (class uvm_pkg::uvm_object_wrapper) '{type_name:"read_after_write_seq", me:{ ref to class uvm_object_registry#(apb_pkg::read_after_write_seq,"read_after_write_seq")}, Tname:"read_after_write_seq"}   
+UVM_INFO /tools/uvm/uvm-1.2/src/base/uvm_resource.svh(564) @ 0: reporter [UVM/RESOURCE/ACCESSOR] uvm_test_top reads: 0 @ 0  writes: 1 @ 0
+
+ vif [/^uvm_test_top\.demo_tb0\.apb0\.slave\[1\]\..*$/] : (virtual interface apb_if#(32,32,32)) '{pclock:'h0, preset:'h0, paddr:'hxxxxxxxx, prwd:'hx, pwdata:'hxxxxxxxx, penable:'hx, psel:'hxxxx, prdata:'hxxxxxxxx, pslverr:'hx, pready:'hx, has_checks:'h1, has_coverage:'h1}   
+UVM_INFO /tools/uvm/uvm-1.2/src/base/uvm_resource.svh(564) @ 0: reporter [UVM/RESOURCE/ACCESSOR] uvm_test_top.demo_tb0.apb0.slave[1] reads: 0 @ 0  writes: 1 @ 0
+
+ vif [/^uvm_test_top\.demo_tb0\.apb0\.slave\[0\]\..*$/] : (virtual interface apb_if#(32,32,32)) '{pclock:'h0, preset:'h0, paddr:'hxxxxxxxx, prwd:'hx, pwdata:'hxxxxxxxx, penable:'hx, psel:'hxxxx, prdata:'hxxxxxxxx, pslverr:'hx, pready:'hx, has_checks:'h1, has_coverage:'h1}   
+UVM_INFO /tools/uvm/uvm-1.2/src/base/uvm_resource.svh(564) @ 0: reporter [UVM/RESOURCE/ACCESSOR] uvm_test_top.demo_tb0.apb0.slave[0] reads: 0 @ 0  writes: 1 @ 0
+
+UVM_INFO sv/apb_master_driver.sv(112) @ 0: uvm_test_top.demo_tb0.apb0.master.driver [APB_MASTER_DRIVER] Reset observed
+-----------------------------------------------------------------------
+Name                         Type                     Size  Value      
+-----------------------------------------------------------------------
+uvm_test_top                 test_read_after_write    -     @345       
+  demo_tb0                   demo_tb                  -     @371       
+    apb0                     apb_env                  -     @390       
+      bus_collector          apb_collector            -     @460       
+        addr_trans_export    uvm_blocking_peek_imp    -     @483       
+          recording_detail   uvm_verbosity            32    UVM_FULL   
+        item_collected_port  uvm_analysis_port        -     @473       
+          recording_detail   uvm_verbosity            32    UVM_FULL   
+        cfg                  demo_config              -     @380       
+        checks_enable        integral                 1     'h1        
+        coverage_enable      integral                 1     'h1        
+        num_transactions     integral                 32    'h0        
+        recording_detail     uvm_verbosity            32    UVM_FULL   
+      bus_monitor            apb_monitor              -     @406       
+        addr_trans_export    uvm_blocking_peek_imp    -     @440       
+          recording_detail   uvm_verbosity            32    UVM_FULL   
+        addr_trans_port      uvm_blocking_peek_port   -     @450       
+          recording_detail   uvm_verbosity            32    UVM_FULL   
+        coll_mon_port        uvm_analysis_imp         -     @430       
+          recording_detail   uvm_verbosity            32    UVM_FULL   
+        item_collected_port  uvm_analysis_port        -     @420       
+          recording_detail   uvm_verbosity            32    UVM_FULL   
+        cfg                  demo_config              -     @380       
+        checks_enable        integral                 1     'h1        
+        coverage_enable      integral                 1     'h0        
+        num_transactions     integral                 32    'h0        
+        recording_detail     uvm_verbosity            32    UVM_FULL   
+      master                 apb_master_agent         -     @493       
+        driver               apb_master_driver        -     @671       
+          rsp_port           uvm_analysis_port        -     @690       
+          seq_item_port      uvm_seq_item_pull_port   -     @680       
+          cfg                demo_config              -     @380       
+          recording_detail   uvm_verbosity            32    UVM_FULL   
+        sequencer            apb_master_sequencer     -     @534       
+          rsp_export         uvm_analysis_export      -     @543       
+          seq_item_export    uvm_seq_item_pull_imp    -     @661       
+          cfg                demo_config              -     @380       
+          recording_detail   uvm_verbosity            32    UVM_FULL   
+          arbitration_queue  array                    0     -          
+          lock_queue         array                    0     -          
+          num_last_reqs      integral                 32    'd1        
+          num_last_rsps      integral                 32    'd1        
+        monitor              apb_monitor              -     @406       
+        collector            apb_collector            -     @460       
+        is_active            uvm_active_passive_enum  1     UVM_ACTIVE 
+        cfg                  demo_config              -     @380       
+        recording_detail     uvm_verbosity            32    UVM_FULL   
+      slave[0]               apb_slave_agent          -     @502       
+        driver               apb_slave_driver         -     @865       
+          rsp_port           uvm_analysis_port        -     @884       
+          seq_item_port      uvm_seq_item_pull_port   -     @874       
+          recording_detail   uvm_verbosity            32    UVM_FULL   
+        sequencer            apb_slave_sequencer      -     @718       
+          addr_trans_port    uvm_blocking_peek_port   -     @855       
+          rsp_export         uvm_analysis_export      -     @727       
+          seq_item_export    uvm_seq_item_pull_imp    -     @845       
+          cfg                apb_slave_config         -     @381       
+          recording_detail   uvm_verbosity            32    UVM_FULL   
+          arbitration_queue  array                    0     -          
+          lock_queue         array                    0     -          
+          num_last_reqs      integral                 32    'd1        
+          num_last_rsps      integral                 32    'd1        
+        monitor              apb_monitor              -     @406       
+        collector            apb_collector            -     @460       
+        is_active            uvm_active_passive_enum  1     UVM_ACTIVE 
+        cfg                  apb_slave_config         -     @381       
+        recording_detail     uvm_verbosity            32    UVM_FULL   
+      slave[1]               apb_slave_agent          -     @511       
+        monitor              apb_monitor              -     @406       
+        collector            apb_collector            -     @460       
+        is_active            uvm_active_passive_enum  1     UVM_PASSIVE
+        cfg                  apb_slave_config         -     @382       
+        recording_detail     uvm_verbosity            32    UVM_FULL   
+      cfg                    demo_config              -     @380       
+        slave_configs        da(object)               2     -          
+          [0]                apb_slave_config         -     @381       
+          [1]                apb_slave_config         -     @382       
+        master_config        apb_master_config        -     @383       
+          name               string                   6     master     
+          is_active          uvm_active_passive_enum  1     UVM_ACTIVE 
+      checks_enable          integral                 1     'h1        
+      coverage_enable        integral                 1     'h1        
+      recording_detail       uvm_verbosity            32    UVM_FULL   
+    recording_detail         uvm_verbosity            32    UVM_FULL   
+-----------------------------------------------------------------------
+UVM_INFO sv/apb_master_seq_lib.sv(201) @ 0: uvm_test_top.demo_tb0.apb0.master.sequencer@@read_after_write_seq [read_after_write_seq] Starting...
+UVM_INFO sv/apb_slave_seq_lib.sv(77) @ 0: uvm_test_top.demo_tb0.apb0.slave[0].sequencer@@mem_response_seq [mem_response_seq] Starting...
+UVM_INFO sv/apb_collector.sv(108) @ 51: uvm_test_top.demo_tb0.apb0.bus_collector [apb_collector] Detected Reset Done
+UVM_INFO sv/apb_slave_driver.sv(72) @ 51: uvm_test_top.demo_tb0.apb0.slave[0].driver [apb_slave_driver] Reset dropped
+UVM_INFO sv/apb_monitor.sv(129) @ 125: uvm_test_top.demo_tb0.apb0.bus_monitor [apb_monitor] Address Phase Complete: 000000ee[APB_WRITE]
+UVM_INFO sv/apb_master_driver.sv(130) @ 135: uvm_test_top.demo_tb0.apb0.master.driver [APB_MASTER_DRIVER_TR] APB Finished Driving Transfer 
+-------------------------------------------------------------------------------------------------------------------------
+Name                           Type                Size  Value                                                           
+-------------------------------------------------------------------------------------------------------------------------
+req                            apb_transfer        -     @975                                                            
+  addr                         integral            32    'hee                                                            
+  direction                    apb_direction_enum  32    APB_WRITE                                                       
+  data                         integral            32    'h12345678                                                      
+  master                       string              0     ""                                                              
+  slave                        string              0     ""                                                              
+  begin_time                   time                64    55                                                              
+  depth                        int                 32    'd2                                                             
+  parent sequence (name)       string              20    read_after_write_seq                                            
+  parent sequence (full name)  string              64    uvm_test_top.demo_tb0.apb0.master.sequencer.read_after_write_seq
+  sequencer                    string              43    uvm_test_top.demo_tb0.apb0.master.sequencer                     
+-------------------------------------------------------------------------------------------------------------------------
+
+UVM_INFO sv/apb_monitor.sv(145) @ 135: uvm_test_top.demo_tb0.apb0.bus_monitor [apb_monitor] Transaction Collected:
+-----------------------------------------------------
+Name             Type                Size  Value     
+-----------------------------------------------------
+trans_collected  apb_transfer        -     @1051     
+  addr           integral            32    'hee      
+  direction      apb_direction_enum  32    APB_WRITE 
+  data           integral            32    'h12345678
+  master         string              6     master    
+  slave          string              6     slave0    
+  begin_time     time                64    115       
+  end_time       time                64    135       
+-----------------------------------------------------
+
+UVM_INFO sv/apb_collector.sv(138) @ 135: uvm_test_top.demo_tb0.apb0.bus_collector [apb_collector] Transfer collected :
+-----------------------------------------------------
+Name             Type                Size  Value     
+-----------------------------------------------------
+trans_collected  apb_transfer        -     @469      
+  addr           integral            32    'hee      
+  direction      apb_direction_enum  32    APB_WRITE 
+  data           integral            32    'h12345678
+  master         string              6     master    
+  slave          string              6     slave0    
+  begin_time     time                64    115       
+  end_time       time                64    135       
+-----------------------------------------------------
+
+UVM_INFO sv/apb_master_driver.sv(130) @ 215: uvm_test_top.demo_tb0.apb0.master.driver [APB_MASTER_DRIVER_TR] APB Finished Driving Transfer 
+-------------------------------------------------------------------------------------------------------------------------
+Name                           Type                Size  Value                                                           
+-------------------------------------------------------------------------------------------------------------------------
+req                            apb_transfer        -     @975                                                            
+  addr                         integral            32    'hee                                                            
+  direction                    apb_direction_enum  32    APB_READ                                                        
+  data                         integral            32    'h0                                                             
+  master                       string              0     ""                                                              
+  slave                        string              0     ""                                                              
+  begin_time                   time                64    145                                                             
+  depth                        int                 32    'd2                                                             
+  parent sequence (name)       string              20    read_after_write_seq                                            
+  parent sequence (full name)  string              64    uvm_test_top.demo_tb0.apb0.master.sequencer.read_after_write_seq
+  sequencer                    string              43    uvm_test_top.demo_tb0.apb0.master.sequencer                     
+-------------------------------------------------------------------------------------------------------------------------
+
+UVM_INFO sv/apb_monitor.sv(129) @ 215: uvm_test_top.demo_tb0.apb0.bus_monitor [apb_monitor] Address Phase Complete: 000000ee[APB_READ]
+UVM_INFO sv/apb_master_seq_lib.sv(223) @ 215: uvm_test_top.demo_tb0.apb0.master.sequencer@@read_after_write_seq [read_after_write_seq] addr = 'hee, data = 'h0
+UVM_INFO sv/apb_slave_seq_lib.sv(83) @ 215: uvm_test_top.demo_tb0.apb0.slave[0].sequencer@@mem_response_seq [mem_response_seq] Address:000000ee Range Matching APB_READ.  Responding...
+UVM_INFO sv/apb_monitor.sv(145) @ 225: uvm_test_top.demo_tb0.apb0.bus_monitor [apb_monitor] Transaction Collected:
+-----------------------------------------------------
+Name             Type                Size  Value     
+-----------------------------------------------------
+trans_collected  apb_transfer        -     @1088     
+  addr           integral            32    'hee      
+  direction      apb_direction_enum  32    APB_READ  
+  data           integral            32    'h12345678
+  master         string              6     master    
+  slave          string              6     slave0    
+  begin_time     time                64    205       
+  end_time       time                64    225       
+-----------------------------------------------------
+
+UVM_INFO sv/apb_collector.sv(138) @ 225: uvm_test_top.demo_tb0.apb0.bus_collector [apb_collector] Transfer collected :
+-----------------------------------------------------
+Name             Type                Size  Value     
+-----------------------------------------------------
+trans_collected  apb_transfer        -     @469      
+  addr           integral            32    'hee      
+  direction      apb_direction_enum  32    APB_READ  
+  data           integral            32    'h12345678
+  master         string              6     master    
+  slave          string              6     slave0    
+  begin_time     time                64    205       
+  end_time       time                64    225       
+-----------------------------------------------------
+
+UVM_INFO /tools/uvm/uvm-1.2/src/base/uvm_objection.svh(1270) @ 415: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO sv/apb_collector.sv(153) @ 415: uvm_test_top.demo_tb0.apb0.bus_collector [apb_collector] Report: APB collector collected 2 transfers
+UVM_INFO sv/apb_monitor.sv(164) @ 415: uvm_test_top.demo_tb0.apb0.bus_monitor [apb_monitor] Report: APB monitor collected 2 transfers
+UVM_INFO /tools/uvm/uvm-1.2/src/base/uvm_report_server.svh(847) @ 415: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   25
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[APB_MASTER_DRIVER]     1
+[APB_MASTER_DRIVER_TR]     2
+[CFGNRD]     1
+[RNTST]     1
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+[UVM/RESOURCE/ACCESSOR]     4
+[apb_collector]     4
+[apb_monitor]     5
+[apb_slave_driver]     1
+[mem_response_seq]     2
+[read_after_write_seq]     2
+
+$finish called from file "/tools/uvm/uvm-1.2/src/base/uvm_root.svh", line 517.
+$finish at simulation time                  415
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 415 ns
+CPU Time:      1.700 seconds;       Data structure size:   0.5Mb
+Mon Mar 15 03:50:56 2021

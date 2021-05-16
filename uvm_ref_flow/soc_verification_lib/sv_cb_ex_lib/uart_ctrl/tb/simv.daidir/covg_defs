@@ -1,0 +1,1525 @@
+global coverage_group 0 apb_pkg::apb_monitor::apb_transfer_cg __coverage_apb_monitor.apb_transfer_cg unused_apb_monitor_apb_transfer_cg_loop_label apb_pkg 0 1 0 0 ( )
+ 1 6
+ 99 /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/sv/apb_monitor.sv
+ 101 /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_monitor.sv
+ 104 /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_rx_monitor.sv
+ 104 /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/sv/uart_tx_monitor.sv
+ 95 /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/uart_ctrl_reg_model.sv
+ 100 /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/uart_ctrl/sv/coverage/uart_ctrl_cover.sv
+ 71 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+0
+0
+0
+64
+0
+ 0
+
+3
+0
+1
+ 10 TRANS_ADDR 72 0 0 0 51 apb_monitor::apb_pkg_apb_monitor_apb_transfer_cg_fn 51 apb_monitor::apb_pkg_apb_monitor_apb_transfer_cg_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 32 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 4 ZERO 73 0 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 53 apb_monitor::apb_pkg_apb_monitor_apb_transfer_cg_fn_0 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 8 NON_ZERO 74 0 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 53 apb_monitor::apb_pkg_apb_monitor_apb_transfer_cg_fn_1 0 53 apb_monitor::apb_pkg_apb_monitor_apb_transfer_cg_fn_2 0 0 0 0 0
+
+ 15 TRANS_DIRECTION 76 0 0 0 53 apb_monitor::apb_pkg_apb_monitor_apb_transfer_cg_fn_3 53 apb_monitor::apb_pkg_apb_monitor_apb_transfer_cg_fn_3 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 7 32 1 27 apb_pkg::apb_direction_enum 1 1 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 4 READ 77 0 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 53 apb_monitor::apb_pkg_apb_monitor_apb_transfer_cg_fn_4 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 5 WRITE 78 0 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 53 apb_monitor::apb_pkg_apb_monitor_apb_transfer_cg_fn_5 0 0 0 0 0 0 0
+
+ 10 TRANS_DATA 80 0 0 0 53 apb_monitor::apb_pkg_apb_monitor_apb_transfer_cg_fn_6 53 apb_monitor::apb_pkg_apb_monitor_apb_transfer_cg_fn_6 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 32 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 3 1 1 0 0 1 1 4 ZERO 81 0 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 53 apb_monitor::apb_pkg_apb_monitor_apb_transfer_cg_fn_0 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 8 NON_ZERO 82 0 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 53 apb_monitor::apb_pkg_apb_monitor_apb_transfer_cg_fn_1 0 53 apb_monitor::apb_pkg_apb_monitor_apb_transfer_cg_fn_7 0 0 0 0 0
+ 1 1 0 0 1 1 8 ALL_ONES 83 0 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 53 apb_monitor::apb_pkg_apb_monitor_apb_transfer_cg_fn_8 0 0 0 0 0 0 0
+
+ 28 TRANS_ADDR_X_TRANS_DIRECTION 0 85 0 0 0 0 2 0 1 -1 0 0 0
+ 0
+ 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+end_coverage_group
+global coverage_group 0 uart_pkg::uart_monitor::uart_trans_frame_cg __coverage_uart_monitor.uart_trans_frame_cg unused_uart_monitor_uart_trans_frame_cg_loop_label uart_pkg 0 1 0 0 ( )
+ 0 66 1 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+0
+0
+0
+64
+0
+ 0
+
+4
+0
+2
+ 13 NUM_STOP_BITS 67 1 0 0 58 uart_monitor::uart_pkg_uart_monitor_uart_trans_frame_cg_fn 58 uart_monitor::uart_pkg_uart_monitor_uart_trans_frame_cg_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 3 ONE 68 1 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 60 uart_monitor::uart_pkg_uart_monitor_uart_trans_frame_cg_fn_0 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 3 TWO 69 1 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 60 uart_monitor::uart_pkg_uart_monitor_uart_trans_frame_cg_fn_1 0 0 0 0 0 0 0
+
+ 11 DATA_LENGTH 71 1 0 0 60 uart_monitor::uart_pkg_uart_monitor_uart_trans_frame_cg_fn_2 60 uart_monitor::uart_pkg_uart_monitor_uart_trans_frame_cg_fn_2 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 2 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 3 1 1 0 0 1 1 5 EIGHT 72 1 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 2 1 1 60 uart_monitor::uart_pkg_uart_monitor_uart_trans_frame_cg_fn_3 0 0 0 0 0 0 0
+ 1 1 60 uart_monitor::uart_pkg_uart_monitor_uart_trans_frame_cg_fn_4 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 5 SEVEN 73 1 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 60 uart_monitor::uart_pkg_uart_monitor_uart_trans_frame_cg_fn_5 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 3 SIX 74 1 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 60 uart_monitor::uart_pkg_uart_monitor_uart_trans_frame_cg_fn_6 0 0 0 0 0 0 0
+
+ 11 PARITY_MODE 76 1 0 0 60 uart_monitor::uart_pkg_uart_monitor_uart_trans_frame_cg_fn_7 60 uart_monitor::uart_pkg_uart_monitor_uart_trans_frame_cg_fn_7 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 2 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 4 1 1 0 0 1 1 4 EVEN 77 1 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 60 uart_monitor::uart_pkg_uart_monitor_uart_trans_frame_cg_fn_3 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 3 ODD 78 1 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 60 uart_monitor::uart_pkg_uart_monitor_uart_trans_frame_cg_fn_4 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 5 SPACE 79 1 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 60 uart_monitor::uart_pkg_uart_monitor_uart_trans_frame_cg_fn_5 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 4 MARK 80 1 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 60 uart_monitor::uart_pkg_uart_monitor_uart_trans_frame_cg_fn_6 0 0 0 0 0 0 0
+
+ 12 PARITY_ERROR 83 1 0 0 60 uart_monitor::uart_pkg_uart_monitor_uart_trans_frame_cg_fn_8 60 uart_monitor::uart_pkg_uart_monitor_uart_trans_frame_cg_fn_8 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 4 good 84 1 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 60 uart_monitor::uart_pkg_uart_monitor_uart_trans_frame_cg_fn_0 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 3 bad 85 1 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 60 uart_monitor::uart_pkg_uart_monitor_uart_trans_frame_cg_fn_1 0 0 0 0 0 0 0
+
+ 25 DATA_LENGTH_x_PARITY_MODE 0 88 1 0 0 0 2 1 2 -1 0 0 0
+ 0
+ 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 26 PARITY_ERROR_x_PARITY_MODE 0 89 1 0 0 0 2 3 2 -1 0 0 0
+ 0
+ 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+end_coverage_group
+global coverage_group 0 uart_pkg::uart_rx_monitor::rx_traffic_cg __coverage_uart_rx_monitor.rx_traffic_cg unused_uart_rx_monitor_rx_traffic_cg_loop_label uart_pkg 0 1 0 0 ( )
+ 0 37 2 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+0
+0
+0
+64
+0
+ 0
+
+2
+0
+0
+ 10 FRAME_DATA 38 2 0 0 58 uart_rx_monitor::uart_pkg_uart_rx_monitor_rx_traffic_cg_fn 58 uart_rx_monitor::uart_pkg_uart_rx_monitor_rx_traffic_cg_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 8 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 4 1 1 0 0 1 1 4 zero 39 2 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 60 uart_rx_monitor::uart_pkg_uart_rx_monitor_rx_traffic_cg_fn_0 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 7 smaller 40 2 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 60 uart_rx_monitor::uart_pkg_uart_rx_monitor_rx_traffic_cg_fn_1 0 60 uart_rx_monitor::uart_pkg_uart_rx_monitor_rx_traffic_cg_fn_2 0 0 0 0 0
+ 1 1 0 0 1 1 6 larger 41 2 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 60 uart_rx_monitor::uart_pkg_uart_rx_monitor_rx_traffic_cg_fn_3 0 60 uart_rx_monitor::uart_pkg_uart_rx_monitor_rx_traffic_cg_fn_4 0 0 0 0 0
+ 1 1 0 0 1 1 3 max 42 2 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 60 uart_rx_monitor::uart_pkg_uart_rx_monitor_rx_traffic_cg_fn_5 0 0 0 0 0 0 0
+
+ 13 FRAME_MSB_LSB 44 2 0 0 60 uart_rx_monitor::uart_pkg_uart_rx_monitor_rx_traffic_cg_fn_6 60 uart_rx_monitor::uart_pkg_uart_rx_monitor_rx_traffic_cg_fn_6 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 2 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 4 1 1 0 0 1 1 4 zero 45 2 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 60 uart_rx_monitor::uart_pkg_uart_rx_monitor_rx_traffic_cg_fn_0 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 3 one 46 2 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 60 uart_rx_monitor::uart_pkg_uart_rx_monitor_rx_traffic_cg_fn_1 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 3 two 47 2 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 60 uart_rx_monitor::uart_pkg_uart_rx_monitor_rx_traffic_cg_fn_7 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 5 three 48 2 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 60 uart_rx_monitor::uart_pkg_uart_rx_monitor_rx_traffic_cg_fn_8 0 0 0 0 0 0 0
+
+end_coverage_group
+global coverage_group 0 uart_pkg::uart_rx_monitor::rx_protocol_cg __coverage_uart_rx_monitor.rx_protocol_cg unused_uart_rx_monitor_rx_protocol_cg_loop_label uart_pkg 0 1 0 0 ( )
+ 0 52 2 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+0
+0
+0
+64
+0
+ 0
+
+2
+0
+0
+ 16 PARITY_ERROR_GEN 53 2 0 0 59 uart_rx_monitor::uart_pkg_uart_rx_monitor_rx_protocol_cg_fn 59 uart_rx_monitor::uart_pkg_uart_rx_monitor_rx_protocol_cg_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 6 normal 54 2 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 61 uart_rx_monitor::uart_pkg_uart_rx_monitor_rx_protocol_cg_fn_0 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 12 parity_error 55 2 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 61 uart_rx_monitor::uart_pkg_uart_rx_monitor_rx_protocol_cg_fn_1 0 0 0 0 0 0 0
+
+ 11 FRAME_BREAK 57 2 0 0 61 uart_rx_monitor::uart_pkg_uart_rx_monitor_rx_protocol_cg_fn_2 61 uart_rx_monitor::uart_pkg_uart_rx_monitor_rx_protocol_cg_fn_2 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 6 normal 58 2 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 61 uart_rx_monitor::uart_pkg_uart_rx_monitor_rx_protocol_cg_fn_0 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 11 frame_break 59 2 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 61 uart_rx_monitor::uart_pkg_uart_rx_monitor_rx_protocol_cg_fn_1 0 0 0 0 0 0 0
+
+end_coverage_group
+global coverage_group 0 uart_pkg::uart_tx_monitor::tx_traffic_cg __coverage_uart_tx_monitor.tx_traffic_cg unused_uart_tx_monitor_tx_traffic_cg_loop_label uart_pkg 0 1 0 0 ( )
+ 0 37 3 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+0
+0
+0
+64
+0
+ 0
+
+2
+0
+0
+ 10 FRAME_DATA 38 3 0 0 58 uart_tx_monitor::uart_pkg_uart_tx_monitor_tx_traffic_cg_fn 58 uart_tx_monitor::uart_pkg_uart_tx_monitor_tx_traffic_cg_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 8 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 4 1 1 0 0 1 1 4 zero 39 3 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 60 uart_tx_monitor::uart_pkg_uart_tx_monitor_tx_traffic_cg_fn_0 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 7 smaller 40 3 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 60 uart_tx_monitor::uart_pkg_uart_tx_monitor_tx_traffic_cg_fn_1 0 60 uart_tx_monitor::uart_pkg_uart_tx_monitor_tx_traffic_cg_fn_2 0 0 0 0 0
+ 1 1 0 0 1 1 6 larger 41 3 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 60 uart_tx_monitor::uart_pkg_uart_tx_monitor_tx_traffic_cg_fn_3 0 60 uart_tx_monitor::uart_pkg_uart_tx_monitor_tx_traffic_cg_fn_4 0 0 0 0 0
+ 1 1 0 0 1 1 3 max 42 3 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 60 uart_tx_monitor::uart_pkg_uart_tx_monitor_tx_traffic_cg_fn_5 0 0 0 0 0 0 0
+
+ 13 FRAME_MSB_LSB 44 3 0 0 60 uart_tx_monitor::uart_pkg_uart_tx_monitor_tx_traffic_cg_fn_6 60 uart_tx_monitor::uart_pkg_uart_tx_monitor_tx_traffic_cg_fn_6 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 2 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 4 1 1 0 0 1 1 4 zero 45 3 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 60 uart_tx_monitor::uart_pkg_uart_tx_monitor_tx_traffic_cg_fn_0 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 3 one 46 3 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 60 uart_tx_monitor::uart_pkg_uart_tx_monitor_tx_traffic_cg_fn_1 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 3 two 47 3 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 60 uart_tx_monitor::uart_pkg_uart_tx_monitor_tx_traffic_cg_fn_7 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 5 three 48 3 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 60 uart_tx_monitor::uart_pkg_uart_tx_monitor_tx_traffic_cg_fn_8 0 0 0 0 0 0 0
+
+end_coverage_group
+global coverage_group 0 uart_pkg::uart_tx_monitor::tx_protocol_cg __coverage_uart_tx_monitor.tx_protocol_cg unused_uart_tx_monitor_tx_protocol_cg_loop_label uart_pkg 0 1 0 0 ( )
+ 0 52 3 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+0
+0
+0
+64
+0
+ 0
+
+2
+0
+0
+ 16 PARITY_ERROR_GEN 53 3 0 0 59 uart_tx_monitor::uart_pkg_uart_tx_monitor_tx_protocol_cg_fn 59 uart_tx_monitor::uart_pkg_uart_tx_monitor_tx_protocol_cg_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 6 normal 54 3 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 61 uart_tx_monitor::uart_pkg_uart_tx_monitor_tx_protocol_cg_fn_0 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 12 parity_error 55 3 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 61 uart_tx_monitor::uart_pkg_uart_tx_monitor_tx_protocol_cg_fn_1 0 0 0 0 0 0 0
+
+ 11 FRAME_BREAK 57 3 0 0 61 uart_tx_monitor::uart_pkg_uart_tx_monitor_tx_protocol_cg_fn_2 61 uart_tx_monitor::uart_pkg_uart_tx_monitor_tx_protocol_cg_fn_2 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 6 normal 58 3 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 61 uart_tx_monitor::uart_pkg_uart_tx_monitor_tx_protocol_cg_fn_0 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 11 frame_break 59 3 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 61 uart_tx_monitor::uart_pkg_uart_tx_monitor_tx_protocol_cg_fn_1 0 0 0 0 0 0 0
+
+end_coverage_group
+global coverage_group 0 uart_ctrl_pkg::ua_div_latch0_c::wr_cg __coverage_ua_div_latch0_c.wr_cg unused_ua_div_latch0_c_wr_cg_loop_label uart_ctrl_pkg 0 1 0 0 ( )
+ 0 32 4 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 57 ua_div_latch0_c::uart_ctrl_pkg_ua_div_latch0_c_wr_cg_fn_0
+0
+0
+0
+64
+0
+ 0
+
+1
+0
+0
+ 7 div_val 34 4 0 0 55 ua_div_latch0_c::uart_ctrl_pkg_ua_div_latch0_c_wr_cg_fn 55 ua_div_latch0_c::uart_ctrl_pkg_ua_div_latch0_c_wr_cg_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 8 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+end_coverage_group
+global coverage_group 0 uart_ctrl_pkg::ua_div_latch0_c::rd_cg __coverage_ua_div_latch0_c.rd_cg unused_ua_div_latch0_c_rd_cg_loop_label uart_ctrl_pkg 0 1 0 0 ( )
+ 0 36 4 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 57 ua_div_latch0_c::uart_ctrl_pkg_ua_div_latch0_c_rd_cg_fn_0
+0
+0
+0
+64
+0
+ 0
+
+1
+0
+0
+ 7 div_val 38 4 0 0 55 ua_div_latch0_c::uart_ctrl_pkg_ua_div_latch0_c_rd_cg_fn 55 ua_div_latch0_c::uart_ctrl_pkg_ua_div_latch0_c_rd_cg_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 8 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+end_coverage_group
+global coverage_group 0 uart_ctrl_pkg::ua_div_latch1_c::wr_cg __coverage_ua_div_latch1_c.wr_cg unused_ua_div_latch1_c_wr_cg_loop_label uart_ctrl_pkg 0 1 0 0 ( )
+ 0 75 4 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 57 ua_div_latch1_c::uart_ctrl_pkg_ua_div_latch1_c_wr_cg_fn_0
+0
+0
+0
+64
+0
+ 0
+
+1
+0
+0
+ 7 div_val 77 4 0 0 55 ua_div_latch1_c::uart_ctrl_pkg_ua_div_latch1_c_wr_cg_fn 55 ua_div_latch1_c::uart_ctrl_pkg_ua_div_latch1_c_wr_cg_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 8 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+end_coverage_group
+global coverage_group 0 uart_ctrl_pkg::ua_div_latch1_c::rd_cg __coverage_ua_div_latch1_c.rd_cg unused_ua_div_latch1_c_rd_cg_loop_label uart_ctrl_pkg 0 1 0 0 ( )
+ 0 79 4 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 57 ua_div_latch1_c::uart_ctrl_pkg_ua_div_latch1_c_rd_cg_fn_0
+0
+0
+0
+64
+0
+ 0
+
+1
+0
+0
+ 7 div_val 81 4 0 0 55 ua_div_latch1_c::uart_ctrl_pkg_ua_div_latch1_c_rd_cg_fn 55 ua_div_latch1_c::uart_ctrl_pkg_ua_div_latch1_c_rd_cg_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 8 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+end_coverage_group
+global coverage_group 0 uart_ctrl_pkg::ua_int_id_c::rd_cg __coverage_ua_int_id_c.rd_cg unused_ua_int_id_c_rd_cg_loop_label uart_ctrl_pkg 0 1 0 0 ( )
+ 0 125 4 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 49 ua_int_id_c::uart_ctrl_pkg_ua_int_id_c_rd_cg_fn_3
+0
+0
+0
+64
+0
+ 0
+
+4
+0
+0
+ 12 priority_bit 127 4 0 0 47 ua_int_id_c::uart_ctrl_pkg_ua_int_id_c_rd_cg_fn 47 ua_int_id_c::uart_ctrl_pkg_ua_int_id_c_rd_cg_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 4 bit1 128 4 0 0 49 ua_int_id_c::uart_ctrl_pkg_ua_int_id_c_rd_cg_fn_0 49 ua_int_id_c::uart_ctrl_pkg_ua_int_id_c_rd_cg_fn_0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 4 bit2 129 4 0 0 49 ua_int_id_c::uart_ctrl_pkg_ua_int_id_c_rd_cg_fn_1 49 ua_int_id_c::uart_ctrl_pkg_ua_int_id_c_rd_cg_fn_1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 4 bit3 130 4 0 0 49 ua_int_id_c::uart_ctrl_pkg_ua_int_id_c_rd_cg_fn_2 49 ua_int_id_c::uart_ctrl_pkg_ua_int_id_c_rd_cg_fn_2 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+end_coverage_group
+global coverage_group 0 uart_ctrl_pkg::ua_fifo_ctrl_c::wr_cg __coverage_ua_fifo_ctrl_c.wr_cg unused_ua_fifo_ctrl_c_wr_cg_loop_label uart_ctrl_pkg 0 1 0 0 ( )
+ 0 169 4 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 55 ua_fifo_ctrl_c::uart_ctrl_pkg_ua_fifo_ctrl_c_wr_cg_fn_2
+0
+0
+0
+64
+0
+ 0
+
+3
+0
+0
+ 8 rx_clear 171 4 0 0 53 ua_fifo_ctrl_c::uart_ctrl_pkg_ua_fifo_ctrl_c_wr_cg_fn 53 ua_fifo_ctrl_c::uart_ctrl_pkg_ua_fifo_ctrl_c_wr_cg_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 8 tx_clear 172 4 0 0 55 ua_fifo_ctrl_c::uart_ctrl_pkg_ua_fifo_ctrl_c_wr_cg_fn_0 55 ua_fifo_ctrl_c::uart_ctrl_pkg_ua_fifo_ctrl_c_wr_cg_fn_0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 22 rx_fifo_int_trig_level 173 4 0 0 55 ua_fifo_ctrl_c::uart_ctrl_pkg_ua_fifo_ctrl_c_wr_cg_fn_1 55 ua_fifo_ctrl_c::uart_ctrl_pkg_ua_fifo_ctrl_c_wr_cg_fn_1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 2 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+end_coverage_group
+global coverage_group 0 uart_ctrl_pkg::ua_lcr_c::wr_cg __coverage_ua_lcr_c.wr_cg unused_ua_lcr_c_wr_cg_loop_label uart_ctrl_pkg 0 1 0 0 ( )
+ 0 227 4 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 43 ua_lcr_c::uart_ctrl_pkg_ua_lcr_c_wr_cg_fn_6
+0
+0
+0
+64
+0
+ 0
+
+7
+0
+0
+ 10 char_lngth 229 4 0 0 41 ua_lcr_c::uart_ctrl_pkg_ua_lcr_c_wr_cg_fn 41 ua_lcr_c::uart_ctrl_pkg_ua_lcr_c_wr_cg_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 2 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 13 num_stop_bits 230 4 0 0 43 ua_lcr_c::uart_ctrl_pkg_ua_lcr_c_wr_cg_fn_0 43 ua_lcr_c::uart_ctrl_pkg_ua_lcr_c_wr_cg_fn_0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 4 p_en 231 4 0 0 43 ua_lcr_c::uart_ctrl_pkg_ua_lcr_c_wr_cg_fn_1 43 ua_lcr_c::uart_ctrl_pkg_ua_lcr_c_wr_cg_fn_1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 11 parity_even 232 4 0 0 43 ua_lcr_c::uart_ctrl_pkg_ua_lcr_c_wr_cg_fn_2 43 ua_lcr_c::uart_ctrl_pkg_ua_lcr_c_wr_cg_fn_2 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 13 parity_sticky 233 4 0 0 43 ua_lcr_c::uart_ctrl_pkg_ua_lcr_c_wr_cg_fn_3 43 ua_lcr_c::uart_ctrl_pkg_ua_lcr_c_wr_cg_fn_3 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 10 break_ctrl 234 4 0 0 43 ua_lcr_c::uart_ctrl_pkg_ua_lcr_c_wr_cg_fn_4 43 ua_lcr_c::uart_ctrl_pkg_ua_lcr_c_wr_cg_fn_4 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 16 div_latch_access 235 4 0 0 43 ua_lcr_c::uart_ctrl_pkg_ua_lcr_c_wr_cg_fn_5 43 ua_lcr_c::uart_ctrl_pkg_ua_lcr_c_wr_cg_fn_5 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+end_coverage_group
+global coverage_group 0 uart_ctrl_pkg::ua_lcr_c::rd_cg __coverage_ua_lcr_c.rd_cg unused_ua_lcr_c_rd_cg_loop_label uart_ctrl_pkg 0 1 0 0 ( )
+ 0 237 4 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 43 ua_lcr_c::uart_ctrl_pkg_ua_lcr_c_rd_cg_fn_6
+0
+0
+0
+64
+0
+ 0
+
+7
+0
+0
+ 10 char_lngth 239 4 0 0 41 ua_lcr_c::uart_ctrl_pkg_ua_lcr_c_rd_cg_fn 41 ua_lcr_c::uart_ctrl_pkg_ua_lcr_c_rd_cg_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 2 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 13 num_stop_bits 240 4 0 0 43 ua_lcr_c::uart_ctrl_pkg_ua_lcr_c_rd_cg_fn_0 43 ua_lcr_c::uart_ctrl_pkg_ua_lcr_c_rd_cg_fn_0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 4 p_en 241 4 0 0 43 ua_lcr_c::uart_ctrl_pkg_ua_lcr_c_rd_cg_fn_1 43 ua_lcr_c::uart_ctrl_pkg_ua_lcr_c_rd_cg_fn_1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 11 parity_even 242 4 0 0 43 ua_lcr_c::uart_ctrl_pkg_ua_lcr_c_rd_cg_fn_2 43 ua_lcr_c::uart_ctrl_pkg_ua_lcr_c_rd_cg_fn_2 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 13 parity_sticky 243 4 0 0 43 ua_lcr_c::uart_ctrl_pkg_ua_lcr_c_rd_cg_fn_3 43 ua_lcr_c::uart_ctrl_pkg_ua_lcr_c_rd_cg_fn_3 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 10 break_ctrl 244 4 0 0 43 ua_lcr_c::uart_ctrl_pkg_ua_lcr_c_rd_cg_fn_4 43 ua_lcr_c::uart_ctrl_pkg_ua_lcr_c_rd_cg_fn_4 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 16 div_latch_access 245 4 0 0 43 ua_lcr_c::uart_ctrl_pkg_ua_lcr_c_rd_cg_fn_5 43 ua_lcr_c::uart_ctrl_pkg_ua_lcr_c_rd_cg_fn_5 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+end_coverage_group
+global coverage_group 0 uart_ctrl_pkg::ua_ier_c::wr_cg __coverage_ua_ier_c.wr_cg unused_ua_ier_c_wr_cg_loop_label uart_ctrl_pkg 0 1 0 0 ( )
+ 0 290 4 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 43 ua_ier_c::uart_ctrl_pkg_ua_ier_c_wr_cg_fn_3
+0
+0
+0
+64
+0
+ 0
+
+4
+0
+0
+ 7 rx_data 292 4 0 0 41 ua_ier_c::uart_ctrl_pkg_ua_ier_c_wr_cg_fn 41 ua_ier_c::uart_ctrl_pkg_ua_ier_c_wr_cg_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 7 tx_data 293 4 0 0 43 ua_ier_c::uart_ctrl_pkg_ua_ier_c_wr_cg_fn_0 43 ua_ier_c::uart_ctrl_pkg_ua_ier_c_wr_cg_fn_0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 11 rx_line_sts 294 4 0 0 43 ua_ier_c::uart_ctrl_pkg_ua_ier_c_wr_cg_fn_1 43 ua_ier_c::uart_ctrl_pkg_ua_ier_c_wr_cg_fn_1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 7 mdm_sts 295 4 0 0 43 ua_ier_c::uart_ctrl_pkg_ua_ier_c_wr_cg_fn_2 43 ua_ier_c::uart_ctrl_pkg_ua_ier_c_wr_cg_fn_2 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+end_coverage_group
+global coverage_group 0 uart_ctrl_pkg::ua_ier_c::rd_cg __coverage_ua_ier_c.rd_cg unused_ua_ier_c_rd_cg_loop_label uart_ctrl_pkg 0 1 0 0 ( )
+ 0 297 4 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 43 ua_ier_c::uart_ctrl_pkg_ua_ier_c_rd_cg_fn_3
+0
+0
+0
+64
+0
+ 0
+
+4
+0
+0
+ 7 rx_data 299 4 0 0 41 ua_ier_c::uart_ctrl_pkg_ua_ier_c_rd_cg_fn 41 ua_ier_c::uart_ctrl_pkg_ua_ier_c_rd_cg_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 7 tx_data 300 4 0 0 43 ua_ier_c::uart_ctrl_pkg_ua_ier_c_rd_cg_fn_0 43 ua_ier_c::uart_ctrl_pkg_ua_ier_c_rd_cg_fn_0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 11 rx_line_sts 301 4 0 0 43 ua_ier_c::uart_ctrl_pkg_ua_ier_c_rd_cg_fn_1 43 ua_ier_c::uart_ctrl_pkg_ua_ier_c_rd_cg_fn_1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 7 mdm_sts 302 4 0 0 43 ua_ier_c::uart_ctrl_pkg_ua_ier_c_rd_cg_fn_2 43 ua_ier_c::uart_ctrl_pkg_ua_ier_c_rd_cg_fn_2 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+end_coverage_group
+global coverage_group 0 uart_ctrl_pkg::uart_ctrl_cover::dut_tx_fifo_cg __coverage_uart_ctrl_cover.dut_tx_fifo_cg unused_uart_ctrl_cover_dut_tx_fifo_cg_loop_label uart_ctrl_pkg 0 1 0 0 ( )
+ 0 67 5 0 0 1 0 0 0 0  1
+0
+26 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+0
+0
+0
+64
+0
+ 0
+
+1
+0
+0
+ 8 tx_level 68 5 0 0 64 uart_ctrl_cover::uart_ctrl_pkg_uart_ctrl_cover_dut_tx_fifo_cg_fn 64 uart_ctrl_cover::uart_ctrl_pkg_uart_ctrl_cover_dut_tx_fifo_cg_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 1 32 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 3 1 1 0 0 1 1 5 EMPTY 69 5 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 66 uart_ctrl_cover::uart_ctrl_pkg_uart_ctrl_cover_dut_tx_fifo_cg_fn_0 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 HALF_FULL 70 5 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 66 uart_ctrl_cover::uart_ctrl_pkg_uart_ctrl_cover_dut_tx_fifo_cg_fn_1 0 66 uart_ctrl_cover::uart_ctrl_pkg_uart_ctrl_cover_dut_tx_fifo_cg_fn_2 0 0 0 0 0
+ 1 1 0 0 1 1 4 FULL 71 5 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 66 uart_ctrl_cover::uart_ctrl_pkg_uart_ctrl_cover_dut_tx_fifo_cg_fn_3 0 66 uart_ctrl_cover::uart_ctrl_pkg_uart_ctrl_cover_dut_tx_fifo_cg_fn_4 0 0 0 0 0
+
+end_coverage_group
+global coverage_group 0 uart_ctrl_pkg::uart_ctrl_cover::dut_rx_fifo_cg __coverage_uart_ctrl_cover.dut_rx_fifo_cg unused_uart_ctrl_cover_dut_rx_fifo_cg_loop_label uart_ctrl_pkg 0 1 0 0 ( )
+ 0 77 5 0 0 1 0 0 0 0  1
+0
+26 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+0
+0
+0
+64
+0
+ 0
+
+1
+0
+0
+ 8 rx_level 78 5 0 0 64 uart_ctrl_cover::uart_ctrl_pkg_uart_ctrl_cover_dut_rx_fifo_cg_fn 64 uart_ctrl_cover::uart_ctrl_pkg_uart_ctrl_cover_dut_rx_fifo_cg_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 1 32 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 3 1 1 0 0 1 1 5 EMPTY 79 5 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 66 uart_ctrl_cover::uart_ctrl_pkg_uart_ctrl_cover_dut_rx_fifo_cg_fn_0 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 9 HALF_FULL 80 5 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 66 uart_ctrl_cover::uart_ctrl_pkg_uart_ctrl_cover_dut_rx_fifo_cg_fn_1 0 66 uart_ctrl_cover::uart_ctrl_pkg_uart_ctrl_cover_dut_rx_fifo_cg_fn_2 0 0 0 0 0
+ 1 1 0 0 1 1 4 FULL 81 5 1 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 66 uart_ctrl_cover::uart_ctrl_pkg_uart_ctrl_cover_dut_rx_fifo_cg_fn_3 0 66 uart_ctrl_cover::uart_ctrl_pkg_uart_ctrl_cover_dut_rx_fifo_cg_fn_4 0 0 0 0 0
+
+end_coverage_group

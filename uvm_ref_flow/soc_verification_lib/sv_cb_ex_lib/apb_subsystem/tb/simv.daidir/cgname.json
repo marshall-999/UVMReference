@@ -1,0 +1,162 @@
+{
+    "gpio_if": [
+        "gpio_if",
+        "qypHC",
+        "module"
+    ],
+    "apb_subsystem_pkg": [
+        "apb_subsystem_pkg",
+        "gI6dI",
+        "module"
+    ],
+    "_vcs_DPI_package": [
+        "_vcs_DPI_package",
+        "uM9F1",
+        "module"
+    ],
+    "power_ctrl_veneer": [
+        "power_ctrl_veneer",
+        "A65rq",
+        "module"
+    ],
+    "vcs_paramclassrepository": [
+        "vcs_paramclassrepository",
+        "hEeZs",
+        "module"
+    ],
+    "uart_top": [
+        "uart_top",
+        "INsae",
+        "module"
+    ],
+    "ahb_pkg": [
+        "ahb_pkg",
+        "A4Qq4",
+        "module"
+    ],
+    "ttc_veneer": [
+        "ttc_veneer",
+        "Cd7VY",
+        "module"
+    ],
+    "ahb_if": [
+        "ahb_if",
+        "neDwQ",
+        "module"
+    ],
+    "std": [
+        "std",
+        "reYIK",
+        "module"
+    ],
+    "apb_if": [
+        "apb_if",
+        "d9vZk",
+        "module"
+    ],
+    "uvm_pkg": [
+        "uvm_pkg",
+        "zr7M1",
+        "module"
+    ],
+    "uart_if": [
+        "uart_if",
+        "AWFLa",
+        "module"
+    ],
+    "smc_apb_lite_if": [
+        "smc_apb_lite_if",
+        "jsFP1",
+        "module"
+    ],
+    "spi_if": [
+        "spi_if",
+        "IHYdB",
+        "module"
+    ],
+    "gpio_pkg": [
+        "gpio_pkg",
+        "FVS01",
+        "module"
+    ],
+    "uart_ctrl_internal_if": [
+        "uart_ctrl_internal_if",
+        "LQ5EI",
+        "module"
+    ],
+    "apb_pkg": [
+        "apb_pkg",
+        "xtRSS",
+        "module"
+    ],
+    "apb_subsystem_1": [
+        "apb_subsystem_1",
+        "QeiU5",
+        "module"
+    ],
+    "uart_pkg": [
+        "uart_pkg",
+        "B8pHK",
+        "module"
+    ],
+    "uart_ctrl_pkg": [
+        "uart_ctrl_pkg",
+        "MKF5h",
+        "module"
+    ],
+    "ahb2apb": [
+        "ahb2apb",
+        "LrxIf",
+        "module"
+    ],
+    "spi_pkg": [
+        "spi_pkg",
+        "EVFD8",
+        "module"
+    ],
+    "apb_subsystem_0": [
+        "apb_subsystem_0",
+        "zqzsp",
+        "module"
+    ],
+    "gpio_veneer": [
+        "gpio_veneer",
+        "su6Q5",
+        "module"
+    ],
+    "uart_wb": [
+        "uart_wb",
+        "vsJ83",
+        "module"
+    ],
+    "uart_debug_if": [
+        "uart_debug_if",
+        "Ic705",
+        "module"
+    ],
+    "power_ctrl_sm": [
+        "power_ctrl_sm",
+        "I6Tjd",
+        "module"
+    ],
+    "ttc_timer_counter_lite": [
+        "ttc_timer_counter_lite",
+        "nJiky",
+        "module"
+    ],
+    "smc_wr_enable_lite": [
+        "smc_wr_enable_lite",
+        "ub9gU",
+        "module"
+    ],
+    "apb_subsystem_top": [
+        "apb_subsystem_top",
+        "s9Ydz",
+        "module"
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module"
+    ]
+}

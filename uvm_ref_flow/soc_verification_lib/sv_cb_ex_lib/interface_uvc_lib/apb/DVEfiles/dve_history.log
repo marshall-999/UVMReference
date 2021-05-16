@@ -1,0 +1,133 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Globals -key recent_cov_databases -value {/home/xiaotu/ch24/24.26/sim/simv.vdb /home/xiaotu/ch15/15.2/sim/simv.vdb /home/xiaotu/ch12/12.2/sim/simv.vdb}
+gui_set_state_value -category Globals -key recent_databases -value {{gui_open_db -file /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/vcdplus.vpd -design V1} {gui_open_db -file /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/uart/vcdplus.vpd -design V1} {gui_open_db -file /home/xiaotu/ch24/24.25/sim/vcdplus.vpd -design V1}}
+gui_set_state_value -category Layout -key child_console_size_x -value 1901
+gui_set_state_value -category Layout -key child_console_size_y -value 171
+gui_set_state_value -category Layout -key child_covdetail_docknewline -value false
+gui_set_state_value -category Layout -key child_covdetail_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_covdetail_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_covdetail_size_x -value 1709
+gui_set_state_value -category Layout -key child_covdetail_size_y -value 554
+gui_set_state_value -category Layout -key child_coveragetable_docknewline -value false
+gui_set_state_value -category Layout -key child_coveragetable_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_coveragetable_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_coveragetable_size_x -value 1709
+gui_set_state_value -category Layout -key child_coveragetable_size_y -value 554
+gui_set_state_value -category Layout -key child_data_size_x -value 158
+gui_set_state_value -category Layout -key child_data_size_y -value 567
+gui_set_state_value -category Layout -key child_driver_size_x -value 1612
+gui_set_state_value -category Layout -key child_driver_size_y -value 179
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_size_x -value 158
+gui_set_state_value -category Layout -key child_hier_size_y -value 567
+gui_set_state_value -category Layout -key child_hier_sort_order -value 1
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_source_size_x -value 1588
+gui_set_state_value -category Layout -key child_source_size_y -value 562
+gui_set_state_value -category Layout -key child_wave_colname -value 266
+gui_set_state_value -category Layout -key child_wave_colvalue -value 266
+gui_set_state_value -category Layout -key child_wave_left -value 536
+gui_set_state_value -category Layout -key child_wave_right -value 1306
+gui_set_state_value -category Layout -key cov_main_pos_x -value 11
+gui_set_state_value -category Layout -key cov_main_pos_y -value 60
+gui_set_state_value -category Layout -key cov_main_size_x -value 1915
+gui_set_state_value -category Layout -key cov_main_size_y -value 882
+gui_set_state_value -category Layout -key main_pos_x -value 14
+gui_set_state_value -category Layout -key main_pos_y -value 63
+gui_set_state_value -category Layout -key main_size_x -value 1915
+gui_set_state_value -category Layout -key main_size_y -value 882
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 1852
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 735
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 36
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 61
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1883
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 882
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_VPDCombo} -value_type string -value inter.vpd
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_curDirCombo} -value_type string -value {/home/xiaotu/svtb_ahb_sram/svtb_ahb_sram/verif/sim /home/xiaotu/2020_pro/work/sim /home/xiaotu/2020_pro/20200417sunchao/ls3137/ccm_r4f/sim}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_exeCombo} -value_type string -value simv
+gui_create_state_key -category Layout_CoverageTable_covtblFGroupsList -key names -value_type string -value {Group,    , ,  ,   ,Score,Covergroup,}
+gui_create_state_key -category Layout_CoverageTable_covtblFGroupsList -key orders -value_type string -value 4,0,1,2,3,5,6,
+gui_create_state_key -category Layout_CoverageTable_covtblFGroupsList -key widths -value_type string -value 220,0,25,0,0,125,125,
+gui_create_state_key -category Layout_CoverageTable_covtblInstancesList -key names -value_type string -value {Name,    , ,  ,   ,Score,}
+gui_create_state_key -category Layout_CoverageTable_covtblInstancesList -key orders -value_type string -value 4,0,1,2,3,5,
+gui_create_state_key -category Layout_CoverageTable_covtblInstancesList -key widths -value_type string -value 220,0,25,0,0,125,
+gui_create_state_key -category Layout_CoverageTable_covtblModulesList -key names -value_type string -value {Name,    , ,  ,   ,Score,}
+gui_create_state_key -category Layout_CoverageTable_covtblModulesList -key orders -value_type string -value 4,0,1,2,3,5,
+gui_create_state_key -category Layout_CoverageTable_covtblModulesList -key widths -value_type string -value 220,0,25,0,0,125,
+gui_create_state_key -category Layout_CovDetail_lnListView -key names -value_type string -value Category,Coverage,
+gui_create_state_key -category Layout_CovDetail_lnListView -key orders -value_type string -value 0,1,
+gui_create_state_key -category Layout_CovDetail_lnListView -key widths -value_type string -value 97,125,
+gui_create_state_key -category Layout_CovDetail_tglListView -key names -value_type string -value {Variable, ,  ,   ,Type,Coverage,Display,}
+gui_create_state_key -category Layout_CovDetail_tglListView -key orders -value_type string -value 3,0,1,2,4,5,6,
+gui_create_state_key -category Layout_CovDetail_tglListView -key widths -value_type string -value 140,25,0,0,50,125,140,
+gui_create_state_key -category Layout_CovDetail_tglDetailListView -key names -value_type string -value {Variable, ,  ,   ,0->1,1->0,}
+gui_create_state_key -category Layout_CovDetail_tglDetailListView -key orders -value_type string -value 3,0,1,2,4,5,
+gui_create_state_key -category Layout_CovDetail_tglDetailListView -key widths -value_type string -value 140,25,0,0,50,50,
+gui_create_state_key -category Layout_CovDetail_fsmListView -key names -value_type string -value {FSM, ,  ,   ,State,Transition,Sequence,}
+gui_create_state_key -category Layout_CovDetail_fsmListView -key orders -value_type string -value 3,0,1,2,5,4,6,
+gui_create_state_key -category Layout_CovDetail_fsmListView -key widths -value_type string -value 68,25,0,0,125,125,125,
+gui_create_state_key -category Layout_CovDetail_fsmlist -key names -value_type string -value {Coverage, ,  ,   ,Transition,}
+gui_create_state_key -category Layout_CovDetail_fsmlist -key orders -value_type string -value 3,0,1,2,4,
+gui_create_state_key -category Layout_CovDetail_fsmlist -key widths -value_type string -value 125,25,0,0,79,
+gui_create_state_key -category Layout_CovDetail_cndListView -key names -value_type string -value {Expression, ,  ,   ,ID,Coverage,Line No.,}
+gui_create_state_key -category Layout_CovDetail_cndListView -key orders -value_type string -value 3,0,1,2,4,5,6,
+gui_create_state_key -category Layout_CovDetail_cndListView -key widths -value_type string -value 320,25,0,0,0,125,68,
+gui_create_state_key -category Layout_CovDetail_brListView -key names -value_type string -value {Name, ,  ,   ,Coverage,Line No.,}
+gui_create_state_key -category Layout_CovDetail_brListView -key orders -value_type string -value 3,0,1,2,4,5,
+gui_create_state_key -category Layout_CovDetail_brListView -key widths -value_type string -value 100,25,0,0,125,68,
+gui_create_state_key -category Layout_CovDetail_designAssertListView -key names -value_type string -value {Assert Name,    , ,  ,   ,Attempts,Real Successes,Failures,Incompletes,Category,Severity,}
+gui_create_state_key -category Layout_CovDetail_designAssertListView -key orders -value_type string -value 4,0,1,2,3,5,6,7,8,9,10,
+gui_create_state_key -category Layout_CovDetail_designAssertListView -key widths -value_type string -value 120,0,25,0,0,71,116,65,92,74,67,
+gui_create_state_key -category Layout_CovDetail_codeMiddleSplitter -key value1 -value_type integer -value 10
+gui_create_state_key -category Layout_CovDetail_codeMiddleSplitter -key value2 -value_type integer -value 323
+gui_create_state_key -category Layout_CovDetail_cndSplitter -key value1 -value_type integer -value 100
+gui_create_state_key -category Layout_CovDetail_cndSplitter -key value2 -value_type integer -value 223
+gui_create_state_key -category Layout_CovDetail_covGrpInsListView -key names -value_type string -value {Cover Group Item,    , ,  ,   ,Definition,Score,Goal,Weight,At Least,Per Instance,Overlap,Auto Bin Max,Print Missing,Comment,}
+gui_create_state_key -category Layout_CovDetail_covGrpInsListView -key orders -value_type string -value 4,0,1,2,3,5,6,7,8,9,10,11,12,13,14,
+gui_create_state_key -category Layout_CovDetail_covGrpInsListView -key widths -value_type string -value 151,0,25,0,0,75,125,34,48,56,84,0,87,85,64,
+gui_create_state_key -category Layout_CovDetail_covGrpDefListView -key names -value_type string -value {Cover Group Item,    , ,  ,   ,Score,Goal,Weight,At Least,Per Instance,Overlap,Auto Bin Max,Print Missing,Comment,}
+gui_create_state_key -category Layout_CovDetail_covGrpDefListView -key orders -value_type string -value 4,0,1,2,3,5,6,7,8,9,10,11,12,13,
+gui_create_state_key -category Layout_CovDetail_covGrpDefListView -key widths -value_type string -value 151,0,25,0,0,125,70,84,92,120,0,123,121,100,
+gui_create_state_key -category Layout_CovDetail_m_CovGrpTable -key names -value_type string -value {Bin Name,    , ,  ,   ,Status,Cross,At Least,Size,Hit Count,}
+gui_create_state_key -category Layout_CovDetail_m_CovGrpTable -key orders -value_type string -value 5,0,1,2,3,4,6,7,8,9,
+gui_create_state_key -category Layout_CovDetail_m_CovGrpTable -key widths -value_type string -value 100,0,25,0,0,150,0,68,43,74,
+gui_create_state_key -category {Layout_CovDetail_assertion list} -key names -value_type string -value {Instance,    , ,  ,   ,Assert Name,Attempts,Real Successes,Failures,Incompletes,Category,Severity,}
+gui_create_state_key -category {Layout_CovDetail_assertion list} -key orders -value_type string -value 4,0,1,2,3,5,6,7,8,9,10,11,
+gui_create_state_key -category {Layout_CovDetail_assertion list} -key widths -value_type string -value 93,0,25,0,0,128,95,140,110,116,98,91,
+gui_create_state_key -category Layout_CovDetail_funMiddleSplitter -key value1 -value_type integer -value 840
+gui_create_state_key -category Layout_CovDetail_funMiddleSplitter -key value2 -value_type integer -value 839
+gui_create_state_key -category Layout_CovDetail_splitterWithPrefVal -key value1 -value_type integer -value 100
+gui_create_state_key -category Layout_CovDetail_splitterWithPrefVal -key value2 -value_type integer -value 1
+gui_state_default_create -off
+
+# Begin command logging
+gui_open_db -file /home/xiaotu/uvm_ref_flow/soc_verification_lib/sv_cb_ex_lib/interface_uvc_lib/apb/vcdplus.vpd -design V1
+gui_list_expand -id  Hier.1   apb_pkg
+gui_list_collapse -id  Hier.1   apb_pkg
+gui_list_select -id Data.1 -selected  { demo_top.reset   }
+gui_list_expand -id  Data.1   {demo_top.UVM_SETSTR[31:0]}
+gui_list_collapse -id  Data.1   {demo_top.UVM_SETSTR[31:0]}
+gui_list_select -id Hier.1 -current_item_name apb_pkg -current_item_type Scope  -selected  { apb_pkg   }
+gui_list_expand -id  Hier.1   uvm_pkg
+gui_list_collapse -id  Hier.1   uvm_pkg
+gui_list_expand -id  Hier.1   demo_top
+gui_list_select -id Hier.1 -current_item_name demo_top.apb_if_0 -current_item_type Scope  -selected  { demo_top.apb_if_0   }
+gui_list_select -id Data.1 -selected  { demo_top.apb_if_0.pclock   }
+gui_list_select -id Data.1 { demo_top.apb_if_0.preset  {demo_top.apb_if_0.paddr[31:0]}  demo_top.apb_if_0.prwd  {demo_top.apb_if_0.pwdata[31:0]}  demo_top.apb_if_0.penable  {demo_top.apb_if_0.psel[15:0]}  {demo_top.apb_if_0.prdata[31:0]}  demo_top.apb_if_0.pslverr  demo_top.apb_if_0.pready  demo_top.apb_if_0.has_checks  demo_top.apb_if_0.has_coverage  {demo_top.apb_if_0.PADDR_WIDTH[31:0]}  {demo_top.apb_if_0.PWDATA_WIDTH[31:0]}  {demo_top.apb_if_0.PRDATA_WIDTH[31:0]}   }
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Data.1 { demo_top.apb_if_0.pclock demo_top.apb_if_0.preset {demo_top.apb_if_0.paddr[31:0]} demo_top.apb_if_0.prwd {demo_top.apb_if_0.pwdata[31:0]} demo_top.apb_if_0.penable {demo_top.apb_if_0.psel[15:0]} {demo_top.apb_if_0.prdata[31:0]} demo_top.apb_if_0.pslverr demo_top.apb_if_0.pready demo_top.apb_if_0.has_checks demo_top.apb_if_0.has_coverage {demo_top.apb_if_0.PADDR_WIDTH[31:0]} {demo_top.apb_if_0.PWDATA_WIDTH[31:0]} {demo_top.apb_if_0.PRDATA_WIDTH[31:0]} } -insertionbar
+gui_close_window -window TopLevel.2
